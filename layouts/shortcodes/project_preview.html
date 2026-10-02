@@ -1,0 +1,23 @@
+{{- $section := .Get "section" | default "projects" -}}
+{{- $page := site.GetPage $section -}}
+{{- $is_fr := eq site.Language.Lang "fr" -}}
+{{- with $page -}}
+<div class="not-prose my-8 grid gap-5 md:grid-cols-3">
+  {{ range first 3 (where .RegularPages.ByWeight "Params.featured" true) }}
+    {{- $image := resources.Get .Params.project_image -}}
+    {{- $imageAlt := .Params.image_alt -}}
+    <a href="{{ .RelPermalink }}" class="overflow-hidden border border-slate-200 text-slate-900 no-underline transition hover:border-slate-500">
+      {{ with $image }}
+        {{- $thumb := .Fill "720x420 Center webp q82" -}}
+        <img src="{{ $thumb.RelPermalink }}" width="720" height="420" alt="{{ $imageAlt }}" loading="lazy" class="h-32 w-full object-cover">
+      {{ end }}
+      <div class="p-5">
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ .Params.umbrella_label }}</p>
+        <h3 class="mt-2 text-lg font-semibold">{{ .Title }}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ .Params.summary }}</p>
+      </div>
+    </a>
+  {{ end }}
+</div>
+<p><a href="{{ .RelPermalink }}">{{ if $is_fr }}Voir tous les projets en cours{{ else }}View all current projects{{ end }}</a></p>
+{{- end -}}

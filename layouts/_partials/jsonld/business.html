@@ -1,0 +1,32 @@
+{{- $sharing_image := resources.GetMatch (path.Join "media" "sharing.*") -}}
+{{- $logo_url := partial "functions/get_logo_url" . -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ site.BaseURL }},
+  "name": "SAGE Lab",
+  "alternateName": "Laboratoire SAGE",
+  "description": {{ site.Params.hugoblox.identity.description }},
+  "logo": {{ $logo_url }},
+  {{ with $sharing_image }}"image": {{ .Permalink }},{{ end }}
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "Université du Québec à Rimouski",
+    "alternateName": "UQAR",
+    "url": "https://www.uqar.ca/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "207A rue Notre-Dame Est",
+    "addressLocality": "Rimouski",
+    "addressRegion": "QC",
+    "postalCode": "G5L 2A4",
+    "addressCountry": "CA"
+  },
+  "sameAs": [
+    "https://github.com/rempsyc/lab"
+  ],
+  "url": {{ site.BaseURL }}
+}
+</script>

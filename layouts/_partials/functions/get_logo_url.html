@@ -1,0 +1,13 @@
+{{/* Return an absolute logo URL for structured data. */}}
+{{- $logo_url := "" -}}
+{{- if resources.Get "media/logo.png" | or (resources.Get "media/logo.svg") -}}
+  {{- $logo_data := partialCached "functions/get_logo" (dict "constraint" "fit" "size" 512) "logo_jsonld" -}}
+  {{- with $logo_data.resource -}}
+    {{- $logo_url = .Permalink -}}
+  {{- end -}}
+{{- else -}}
+  {{- with (partial "functions/get_site_icon" 512).resource -}}
+    {{- $logo_url = .Permalink -}}
+  {{- end -}}
+{{- end -}}
+{{- return $logo_url -}}

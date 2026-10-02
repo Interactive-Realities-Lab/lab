@@ -1,0 +1,26 @@
+{{- $item := . -}}
+{{- $authors := $item.Params.authors | default slice -}}
+
+{{- if gt (len $authors) 10 -}}
+  {{- $lead_authors := first 3 $authors -}}
+  {{- $doi := $item.Params.doi | default "" -}}
+  {{- with $item.Params.hugoblox -}}
+    {{- with .ids -}}
+      {{- with .doi -}}{{- $doi = . -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $doi = strings.TrimPrefix "https://doi.org/" $doi -}}
+  {{- with index hugo.Data.publication_author_overrides $doi -}}
+    {{- with .lead -}}{{- $lead_authors = . -}}{{- end -}}
+  {{- end -}}
+  {{- range $index, $author := $lead_authors -}}
+    {{- if gt $index 0 -}}, {{ end -}}<span>{{ $author }}</span>
+  {{- end -}}
+  <span>, {{ if eq $item.Lang "fr" }}Plusieurs…auteurs{{ else }}Many…authors{{ end }}</span>
+  {{- if and (in $authors "Rémi Thériault") (not (in $lead_authors "Rémi Thériault")) -}}
+    <span>, Rémi Thériault</span>
+  {{- end -}}
+  <span>, et al</span>
+{{- else -}}
+  {{- partial "page_metadata_authors" $item -}}
+{{- end -}}

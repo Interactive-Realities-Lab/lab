@@ -1,0 +1,8 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- with resources.Get $src -}}
+  {{- $image := .Fill "1200x480 Center webp q85" -}}
+  <figure class="research-domain-image">
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  </figure>
+{{- end -}}

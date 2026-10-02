@@ -1,0 +1,19 @@
+{
+  "name": "sage-lab-website",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "description": "Bilingual website for the SAGE Lab at UQAR",
+  "scripts": {
+    "dev": "hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender --noTimes",
+    "build": "hugo --minify --noTimes && pnpm run pagefind",
+    "pagefind": "pagefind --site public"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "pagefind": "^1.4.0",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.12"
+  }
+}

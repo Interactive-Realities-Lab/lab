@@ -1,0 +1,5 @@
+{{- $image := resources.Get "media/psychological-safety.webp" -}}
+<figure>
+  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async" style="width:100%;height:auto;max-width:850px;margin:auto;">
+  <figcaption>{{ .Inner | markdownify }}</figcaption>
+</figure>

@@ -1,0 +1,15 @@
+{{- $collection := .Get "collection" | default "publication" -}}
+{{- $sectionName := cond (eq $collection "publication") "publications" $collection -}}
+{{- $section := site.GetPage $sectionName -}}
+{{- $pages := cond (ne $section nil) $section.RegularPages (slice) -}}
+{{- if $pages -}}
+<ul class="list-collection">
+  {{- range $pages -}}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- with .Params.authors }} — {{ delimit . ", " }}{{ end -}}
+    {{- with .Date }} ({{ .Format "2006" }}){{ end -}}
+  </li>
+  {{- end -}}
+</ul>
+{{- end -}}

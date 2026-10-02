@@ -1,0 +1,25 @@
+# Curated lead-author selections carried over from Rémi's personal website.
+# All remaining large collaborations fall back to their first three authors.
+"10.1073/pnas.2524747123":
+  lead:
+    - Abel Brodeur
+    - David Valenta
+    - Alexandru Marcoci
+
+"10.1038/s41562-025-02254-x":
+  lead:
+    - Erin M. Buchanan
+    - Kelly M. Cuccolo
+    - Nicholas Coles
+
+"10.1037/met0000770":
+  lead:
+    - Tom Heyman
+    - Ekaterina Pronizius
+    - Savannah C. Lewis
+
+"10.1038/s41586-026-10251-x":
+  lead:
+    - Abel Brodeur
+    - Derek Mikola
+    - Nikolai Cook

@@ -1,0 +1,72 @@
+schema: hugoblox/author/v1
+slug: remi-theriault
+is_owner: true
+name:
+  display: Rémi Thériault
+  given: Rémi
+  family: Thériault
+postnominals:
+  - PhD
+role: Assistant Professor of Psychology and SAGE Lab Director
+website: https://remi-theriault.com/
+bio: >-
+  Rémi Thériault is an Assistant Professor of Psychology at the Université du
+  Québec à Rimouski and director of the SAGE Lab. His research examines social
+  identities, implicit cognition, prosociality, empathy, and self-regulation.
+affiliations:
+  - name: Université du Québec à Rimouski (UQAR)
+    url: https://www.uqar.ca/professeurs/theriault-remi/
+links:
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-4315-6788
+    label: ORCID
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=NrfwEncAAAAJ
+    label: Google Scholar
+  - icon: brands/github
+    url: https://github.com/rempsyc
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/rempsyc/
+    label: LinkedIn
+  - icon: brands/bluesky
+    url: https://bsky.app/profile/remi-theriault.com
+    label: Bluesky
+  - icon: hero/globe-alt
+    url: https://remi-theriault.com/
+    label: Personal website
+  - icon: hero/light-bulb
+    url: https://rempsyc.github.io/research-ideas/
+    label: Research Garden
+interests:
+  - Empathy
+  - Implicit attitudes
+  - Self-regulation
+  - Morality
+  - Dreams
+  - Social identity
+  - Open and reproducible science
+education:
+  - degree: Postdoctoral Fellowship in Social Psychology
+    institution: New York University
+    end: 2026-07-31
+  - degree: PhD in Psychology
+    institution: Université du Québec à Montréal
+    end: 2024-12-31
+  - degree: MSc in Psychiatry
+    institution: McGill University
+    end: 2018-08-31
+  - degree: BA in Psychology
+    institution: McGill University
+    end: 2016-05-31
+languages:
+  - name: French
+    level: 5
+    label: Native
+  - name: English
+    level: 5
+    label: Fluent
+user_groups:
+  - Lab Director
+  - Direction du laboratoire
+weight: 1

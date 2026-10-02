@@ -1,0 +1,28 @@
+en:
+  label: English
+  weight: 1
+  contentDir: content/en
+  title: "SAGE : Self, Altruism, Groups, & Empathy"
+  params:
+    lab_name: "SAGE"
+    lab_full_name: "SAGE : Self, Altruism, Groups, & Empathy"
+    institution: "Université du Québec à Rimouski (UQAR)"
+    hugoblox:
+      header:
+        title: SAGE Lab
+      footer:
+        text: 'Hosted on <a href="https://github.com/rempsyc/lab">GitHub</a> and built by <a href="https://remi-theriault.com/">Rémi Thériault</a>.'
+fr:
+  label: Français
+  weight: 2
+  contentDir: content/fr
+  title: "SAGE : Soi, Altruisme, Groupes, et Empathie"
+  params:
+    lab_name: "SAGE"
+    lab_full_name: "SAGE : Soi, Altruisme, Groupes, et Empathie"
+    institution: "Université du Québec à Rimouski (UQAR)"
+    hugoblox:
+      header:
+        title: Labo SAGE
+      footer:
+        text: 'Hébergé sur <a href="https://github.com/rempsyc/lab">GitHub</a> et créé par <a href="https://remi-theriault.com/fr/">Rémi Thériault</a>.'

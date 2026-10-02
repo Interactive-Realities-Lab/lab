@@ -1,0 +1,10 @@
+{{- $is_fr := eq .Lang "fr" -}}
+<footer class="container mx-auto mt-24 mb-4 px-4 text-center text-sm leading-6 text-slate-700">
+  <p>
+    {{- if $is_fr -}}
+      Hébergé sur <a class="underline" href="https://github.com/rempsyc/lab">GitHub</a>, créé par <a class="underline" href="https://remi-theriault.com/fr/">Rémi Thériault</a> et publié avec <a class="underline" href="https://hugoblox.com/templates/academic-cv" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox Kit</a> — <a class="underline" href="https://github.com/rempsyc/lab/generate" target="_blank" rel="noopener">cloner ce modèle</a>.
+    {{- else -}}
+      Hosted on <a class="underline" href="https://github.com/rempsyc/lab">GitHub</a>, built by <a class="underline" href="https://remi-theriault.com/">Rémi Thériault</a>, and published with <a class="underline" href="https://hugoblox.com/templates/academic-cv" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox Kit</a> — <a class="underline" href="https://github.com/rempsyc/lab/generate" target="_blank" rel="noopener">clone this template</a>.
+    {{- end -}}
+  </p>
+</footer>

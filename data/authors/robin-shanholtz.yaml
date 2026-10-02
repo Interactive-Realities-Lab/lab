@@ -1,0 +1,15 @@
+schema: hugoblox/author/v1
+slug: robin-shanholtz
+name:
+  display: Robin Shanholtz
+  given: Robin
+  family: Shanholtz
+role: Research Assistant
+website: https://www.centerconflictcooperation.com/people
+affiliations:
+  - name: NYU · Center for Conflict & Cooperation
+    url: https://www.centerconflictcooperation.com/people
+user_groups:
+  - Research Assistants
+  - Auxiliaires de recherche
+weight: 30

@@ -1,0 +1,15 @@
+schema: hugoblox/author/v1
+slug: androw-ramy
+name:
+  display: Androw Ramy
+  given: Androw
+  family: Ramy
+role: Research Assistant
+website: https://www.centerconflictcooperation.com/people
+affiliations:
+  - name: NYU · Center for Conflict & Cooperation
+    url: https://www.centerconflictcooperation.com/people
+user_groups:
+  - Research Assistants
+  - Auxiliaires de recherche
+weight: 20

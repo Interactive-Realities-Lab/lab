@@ -1,0 +1,19 @@
+main:
+  - name: Research
+    url: research/
+    weight: 20
+  - name: Projects
+    url: projects/
+    weight: 25
+  - name: People
+    url: people/
+    weight: 30
+  - name: Publications
+    url: publications/
+    weight: 40
+  - name: Join
+    url: join/
+    weight: 60
+  - name: Contact
+    url: contact/
+    weight: 70

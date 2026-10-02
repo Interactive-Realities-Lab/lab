@@ -1,0 +1,59 @@
+name: Sync Publications from ORCID
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 10 1 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-orcid-publications
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository_owner != 'HugoBlox'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Import the public ORCID record
+        env:
+          ORCID_ID: "0000-0003-4315-6788"
+        run: |
+          python -m pip install "hugobloxorcid==0.3.0"
+          hugoblox-orcid-import "$ORCID_ID" \
+            --output "$RUNNER_TEMP/orcid-publications" \
+            --projects-output "$RUNNER_TEMP/orcid-projects" \
+            --no-download-pdf \
+            --no-import-grants
+
+      - name: Add only newly discovered publications
+        run: |
+          python scripts/normalize_orcid_publications.py "$RUNNER_TEMP/orcid-publications"
+          rsync -a --ignore-existing "$RUNNER_TEMP/orcid-publications/" content/en/publications/
+          rsync -a --ignore-existing "$RUNNER_TEMP/orcid-publications/" content/fr/publications/
+
+      - name: Open a reviewable update
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automation/orcid-publications
+          delete-branch: true
+          commit-message: "content: add publications discovered through ORCID"
+          title: "Publications: review new ORCID records"
+          body: |
+            This automated update adds publications newly discovered in Rémi Thériault's public ORCID record.
+
+            Please review titles, dates, authors, publication status, and links before merging. Existing publication files are never overwritten.
+          labels: automated-pr, content, publications

@@ -1,0 +1,22 @@
+# Keep source and content files consistent across Windows, macOS, and Linux.
+* text=auto eol=lf
+
+# Preserve native Windows line endings for Windows command scripts.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Never perform line-ending conversion on binary assets.
+*.avif binary
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.mp3 binary
+*.mp4 binary
+*.pdf binary
+*.png binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.zip binary

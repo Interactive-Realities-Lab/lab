@@ -1,0 +1,17 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": {{ printf "%s#website" site.BaseURL }},
+  "name": "SAGE Lab",
+  "alternateName": "Labo SAGE",
+  {{ if site.Params.hugoblox.search.enable }}
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {{ printf "%s?q={search_term_string}" site.BaseURL }},
+    "query-input": "required name=search_term_string"
+  },
+  {{ end }}
+  "url": {{ site.BaseURL }}
+}
+</script>
