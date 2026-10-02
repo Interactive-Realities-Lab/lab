@@ -5,24 +5,22 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": {{ site.BaseURL }},
-  "name": "SAGE Lab",
-  "alternateName": "Laboratoire SAGE",
+  "name": "Interactive Realities Laboratory",
+  "alternateName": "IRLab",
   "description": {{ site.Params.hugoblox.identity.description }},
   "logo": {{ $logo_url }},
   {{ with $sharing_image }}"image": {{ .Permalink }},{{ end }}
   "parentOrganization": {
     "@type": "CollegeOrUniversity",
-    "name": "Université du Québec à Rimouski",
-    "alternateName": "UQAR",
-    "url": "https://www.uqar.ca/"
+    "name": "Iowa State University",
+    "url": "https://www.iastate.edu/"
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "207A rue Notre-Dame Est",
-    "addressLocality": "Rimouski",
-    "addressRegion": "QC",
-    "postalCode": "G5L 2A4",
-    "addressCountry": "CA"
+    "streetAddress": "Durham Center, Room 073",
+    "addressLocality": "Ames",
+    "addressRegion": "Iowa",
+    "addressCountry": "US"
   },
   "sameAs": [
     "https://github.com/rempsyc/lab"

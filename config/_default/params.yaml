@@ -13,18 +13,18 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "SAGE Lab"
+    name: "IRLab"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: "SAGE Lab"
+    organization: "Interactive Realities Laboratory"
     # Schema.org type for structured data
     type: organization # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Self, Altruism, Groups, & Empathy"
+    tagline: "Designing effective interactions for extended reality."
     # Site meta description for search engines and social sharing
-    description: "A bilingual social psychology research lab at UQAR studying Self, Altruism, Groups, and Empathy."
+    description: "The Interactive Realities Laboratory at Iowa State University studies how people interact with immersive technologies and how extended reality can support real-world work, training, and decision-making."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "RemiTPsyc" # Twitter/X handle for Twitter Cards (without @)
+      twitter: "" # Twitter/X handle for Twitter Cards (without @)
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -90,7 +90,6 @@ hugoblox:
     search: true
     theme_toggle: false
     theme_picker: false
-    language_switcher: true
     # Call-to-action button
     cta:
       enable: false
@@ -104,7 +103,6 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal # minimal | columns | centered
-    language_switcher: false
     # Custom footer text (HTML supported)
     text: ""
 

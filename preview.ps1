@@ -35,7 +35,7 @@ if ($null -eq $previewPort) {
 $previewUrl = "http://localhost:$previewPort/"
 
 if (-not (Test-Path -LiteralPath $hugoExecutable)) {
-    Write-Host "Preparing Hugo $hugoVersion for the SAGE Lab site (one time only)..." -ForegroundColor Cyan
+    Write-Host "Preparing Hugo $hugoVersion for the IRLab site (one time only)..." -ForegroundColor Cyan
 
     New-Item -ItemType Directory -Path $toolDirectory -Force | Out-Null
     $archivePath = Join-Path $toolDirectory 'hugo.zip'
@@ -58,7 +58,7 @@ if ($LASTEXITCODE -ne 0 -or $installedVersion -notmatch "v$([regex]::Escape($hug
 }
 
 Write-Host ''
-Write-Host 'SAGE Lab preview is starting...' -ForegroundColor Green
+Write-Host 'IRLab preview is starting...' -ForegroundColor Green
 Write-Host "Open $previewUrl" -ForegroundColor Green
 Write-Host 'Changes will refresh automatically. Press Ctrl+C to stop.' -ForegroundColor DarkGray
 Write-Host ''

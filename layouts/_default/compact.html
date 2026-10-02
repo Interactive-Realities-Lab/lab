@@ -9,9 +9,9 @@
       {{ with .Params.project_image }}
         {{- $image := resources.Get . -}}
         {{- with $image -}}
-          {{- $hero := .Fill "1600x800 Center webp q84" -}}
+          {{- $hero := .Resize "1600x webp q84" -}}
           <figure class="mt-7">
-            <img src="{{ $hero.RelPermalink }}" width="1600" height="800" alt="{{ $.Params.image_alt }}" class="w-full object-cover">
+            <img src="{{ $hero.RelPermalink }}" width="{{ $hero.Width }}" height="{{ $hero.Height }}" alt="{{ $.Params.image_alt }}" class="h-auto w-full">
             {{ with $.Params.photo_credit }}
               <figcaption class="mt-2 text-right text-xs text-slate-500">
                 {{ if $.Params.photo_credit_url }}<a href="{{ $.Params.photo_credit_url }}" target="_blank" rel="noopener" class="hover:underline">{{ . }}</a>{{ else }}{{ . }}{{ end }}

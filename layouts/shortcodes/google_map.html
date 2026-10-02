@@ -1,20 +1,20 @@
-{{- $lang := .Get "lang" | default site.Language.Lang -}}
-{{- $title := cond (eq $lang "fr") "Carte montrant l’emplacement du laboratoire SAGE à l’UQAR" "Map showing the SAGE Lab at UQAR" -}}
-{{- $linkLabel := cond (eq $lang "fr") "Ouvrir dans Google Maps" "Open in Google Maps" -}}
-<div class="not-prose mt-8">
-  <div class="aspect-[16/9] w-full overflow-hidden border border-slate-200 bg-slate-100">
-    <iframe
-      src="https://www.google.com/maps?q=207A+rue+Notre-Dame+Est,+Rimouski,+QC+G5L+2A4&output=embed&hl={{ $lang }}"
-      title="{{ $title }}"
-      width="100%"
-      height="100%"
-      style="border:0"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <p class="mt-2 text-right text-sm">
-    <a href="https://www.google.com/maps/search/?api=1&query=207A+rue+Notre-Dame+Est+Rimouski+QC+G5L+2A4" target="_blank" rel="noopener" class="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">{{ $linkLabel }}</a>
-  </p>
-</div>
+{{- $query := .Get "query" | default "Durham Center, 613 Morrill Road, Ames, IA 50011" -}}
+{{- $encoded_query := urlquery $query -}}
+{{- $title := .Get "title" | default "Map showing the Interactive Realities Laboratory at Iowa State University" -}}
+{{- $map_url := printf "https://www.google.com/maps?q=%s&output=embed&hl=en" $encoded_query | safeURL -}}
+{{- $directions_url := printf "https://www.google.com/maps/search/?api=1&query=%s" $encoded_query | safeURL -}}
+<figure class="my-8">
+  <iframe
+    title="{{ $title }}"
+    src="{{ $map_url }}"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+  <figcaption class="mt-2 text-sm text-gray-600">
+    <a href="{{ $directions_url }}" target="_blank" rel="noopener">Open in Google Maps</a>
+  </figcaption>
+</figure>

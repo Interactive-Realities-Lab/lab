@@ -1,0 +1,34 @@
+---
+title: "Measuring visual search and distraction in immersive virtual reality"
+authors:
+  - "Bettina Olk"
+  - "Alina Dinu"
+  - "David J. Zielinski"
+  - "Regis Kopper"
+date: "2018-01-01"
+hugoblox:
+  ids:
+    orcid: "0000-0003-2081-7061:53337547"
+    doi: "10.1098/rsos.172331"
+publication_types:
+  - "article-journal"
+publication:
+  name: "Royal Society Open Science"
+  short_name: "R. Soc. open sci."
+  volume: "5"
+  issue: "5"
+  pages: "172331"
+abstract: "An important issue of psychological research is how experiments conducted in the laboratory or theories based on such experiments relate to human performance in daily life. Immersive virtual reality (VR) allows control over stimuli and conditions at increased ecological validity. The goal of the present study was to accomplish a transfer of traditional paradigms that assess attention and distraction to immersive VR. To further increase ecological validity we explored attentional effects with daily objects as stimuli instead of simple letters. Participants searched for a target among distractors on the countertop of a virtual kitchen. Target–distractor discriminability was varied and the displays were accompanied by a peripheral flanker that was congruent or incongruent to the target. Reaction time was slower when target–distractor discriminability was low and when flankers were incongruent. The results were replicated in a second experiment in which stimuli were presented on a computer screen in two dimensions. The study demonstrates the successful translation of traditional paradigms and manipulations into immersive VR and lays a foundation for future research on attention and distraction in VR. Further, we provide an outline for future studies that should use features of VR that are not available in traditional laboratory research."
+links:
+  -
+      type: "source"
+      url: "https://royalsocietypublishing.org/doi/10.1098/rsos.172331"
+  -
+      type: "pdf"
+      url: "https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.172331"
+featured: false
+summary: "An important issue of psychological research is how experiments conducted in the laboratory or theories based on such experiments relate to human performance in daily life. Immersive virtual reality (VR) allows control over stimuli and conditions at increased ecological validity. The goal of the present study was to accomplish a transfer of traditional paradigms that assess attention and distraction to immersive VR. To further increase ecological validity we explored attentional effects with daily objects as stimuli instead of simple letters. Participants searched for a target among distractors on the countertop of a virtual kitchen. Target–distractor discriminability was varied and the displays were accompanied by a peripheral flanker that was congruent or incongruent to the target. Reaction time was slower when target–distractor discriminability was low and when flankers were incongruent. The results were replicated in a second experiment in which stimuli were presented on a computer screen in two dimensions. The study demonstrates the successful translation of traditional paradigms and manipulations into immersive VR and lays a foundation for future research on attention and distraction in VR. Further, we provide an outline for future studies that should use features of VR that are not available in traditional laboratory research."
+tags: []
+---
+
+An important issue of psychological research is how experiments conducted in the laboratory or theories based on such experiments relate to human performance in daily life. Immersive virtual reality (VR) allows control over stimuli and conditions at increased ecological validity. The goal of the present study was to accomplish a transfer of traditional paradigms that assess attention and distraction to immersive VR. To further increase ecological validity we explored attentional effects with daily objects as stimuli instead of simple letters. Participants searched for a target among distractors on the countertop of a virtual kitchen. Target–distractor discriminability was varied and the displays were accompanied by a peripheral flanker that was congruent or incongruent to the target. Reaction time was slower when target–distractor discriminability was low and when flankers were incongruent. The results were replicated in a second experiment in which stimuli were presented on a computer screen in two dimensions. The study demonstrates the successful translation of traditional paradigms and manipulations into immersive VR and lays a foundation for future research on attention and distraction in VR. Further, we provide an outline for future studies that should use features of VR that are not available in traditional laboratory research.

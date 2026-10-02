@@ -12,9 +12,7 @@ baseURL: 'https://rempsyc.github.io/lab/'
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+locale: en-US
 removePathAccents: true
 
 ############################

@@ -1,9 +1,9 @@
 {
-  "name": "sage-lab-website",
+  "name": "irlab-website",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.14.0",
-  "description": "Bilingual website for the SAGE Lab at UQAR",
+  "description": "Website for the Interactive Realities Laboratory at Iowa State University",
   "scripts": {
     "dev": "hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender --noTimes",
     "build": "hugo --minify --noTimes && pnpm run pagefind",

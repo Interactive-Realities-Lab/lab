@@ -27,6 +27,8 @@ hugo_stats.json
 
 # Dependencies
 node_modules/
+__pycache__/
+*.py[cod]
 
 # Local pnpm package cache
 .pnpm-store/

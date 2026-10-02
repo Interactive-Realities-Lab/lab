@@ -35,6 +35,4 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 5 / 2;
-  object-fit: cover;
 }

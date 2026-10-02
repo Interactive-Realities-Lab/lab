@@ -1,0 +1,36 @@
+schema: hugoblox/author/v1
+slug: regis-kopper
+is_owner: true
+name:
+  display: Regis Kopper
+  given: Regis
+  family: Kopper
+role: Director and Assistant Professor of Computer Science
+website: https://www.regiskopper.com/
+bio: >-
+  Regis Kopper is an Assistant Professor of Computer Science at Iowa State
+  University and director of the Interactive Realities Laboratory. His research
+  focuses on extended reality interfaces and user experience, 3D interaction,
+  immersive simulation and training, and applied XR research in public safety
+  and healthcare.
+avatar: media/authors/regis-kopper.webp
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-2081-7061
+    label: ORCID
+  - icon: hero/globe-alt
+    url: https://www.regiskopper.com/
+    label: Personal website
+interests:
+  - Extended Reality
+  - 3D Interaction
+  - XR User Experience
+  - XR Training and Simulation
+  - Public Safety
+  - Healthcare
+user_groups:
+  - Lab Director
+weight: 1

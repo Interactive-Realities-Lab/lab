@@ -1,39 +1,37 @@
 {{ define "main" }}
-{{- $is_fr := eq site.Language.Lang "fr" -}}
 <div class="mx-auto w-full max-w-6xl px-6 pb-12 pt-6 md:px-12">
   <header class="max-w-4xl">
     <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl" data-pagefind-meta="title">{{ .Title }}</h1>
     <div class="prose prose-slate mt-5 max-w-none lg:prose-lg">{{ .Content }}</div>
   </header>
 
-  <nav class="mt-9 flex flex-wrap gap-2" aria-label="{{ if $is_fr }}Filtrer les projets{{ else }}Filter projects{{ end }}">
-    <button class="project-filter border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-medium text-white" data-filter="all" aria-pressed="true">{{ if $is_fr }}Tous{{ else }}All{{ end }}</button>
-    <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="prosociality" aria-pressed="false">{{ if $is_fr }}Prosocialité robuste{{ else }}Robust prosociality{{ end }}</button>
-    <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="wellbeing" aria-pressed="false">{{ if $is_fr }}Bien-être{{ else }}Well-being{{ end }}</button>
-    <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="open-science" aria-pressed="false">{{ if $is_fr }}Science robuste{{ else }}Robust science{{ end }}</button>
+  <nav class="mt-9 flex flex-wrap gap-2" aria-label="Filter projects">
+    <button class="project-filter border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-medium text-white" data-filter="all" aria-pressed="true">All</button>
+    <!-- <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="public-safety-xr" aria-pressed="false">XR for Public Safety</button>
+    <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="healthcare-xr" aria-pressed="false">XR for Healthcare</button> -->
   </nav>
 
   <div class="mt-8 grid gap-7 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
     {{ range .RegularPages.ByWeight }}
-      {{- $umbrella := .Params.umbrella | default "prosociality" -}}
+      {{- $umbrella := .Params.umbrella | default "public-safety-xr" -}}
       {{- $status := .Params.status | default "active" -}}
-      {{- $marker := cond (eq $umbrella "prosociality") "RP" (cond (eq $umbrella "wellbeing") "BE" "RS") -}}
+      {{- $marker := "XR" -}}
       {{- $image := resources.Get .Params.project_image -}}
       <article class="project-card overflow-hidden border border-slate-200 bg-white" data-umbrella="{{ $umbrella }}" data-status="{{ $status }}">
         <a href="{{ .RelPermalink }}" class="block" aria-label="{{ .Title }}">
           {{ if $image }}
-            {{- $thumb := $image.Fill "900x540 Center webp q82" -}}
-            <img src="{{ $thumb.RelPermalink }}" width="900" height="540" alt="{{ .Params.image_alt }}" loading="lazy" class="h-44 w-full object-cover">
+            {{- $thumb := $image.Resize "900x webp q82" -}}
+            <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-auto w-full">
           {{ else }}
             <div class="flex h-44 items-center justify-center bg-slate-100 text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">{{ $marker }}</div>
           {{ end }}
         </a>
         <div class="p-6">
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ .Params.umbrella_label }}</p>
-          {{ if eq $status "revive" }}<p class="mt-2 inline-block border border-slate-300 px-2 py-1 text-xs font-medium text-slate-700">{{ if $is_fr }}À relancer{{ else }}Available to revive{{ end }}</p>{{ end }}
+          {{ if eq $status "revive" }}<p class="mt-2 inline-block border border-slate-300 px-2 py-1 text-xs font-medium text-slate-700">Available to revive</p>{{ end }}
           <h2 class="mt-2 text-xl font-semibold leading-snug text-slate-950"><a href="{{ .RelPermalink }}" class="hover:underline">{{ .Title }}</a></h2>
           <p class="mt-3 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
-          <a href="{{ .RelPermalink }}" class="mt-5 inline-block font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">{{ if $is_fr }}En savoir plus{{ else }}Learn more{{ end }}</a>
+          <a href="{{ .RelPermalink }}" class="mt-5 inline-block font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Learn more</a>
         </div>
       </article>
     {{ end }}
