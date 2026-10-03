@@ -1,5 +1,5 @@
 ---
-title: FirstModulAR
+title: FirstModulAR (FMAR)
 type: page
 layout: compact
 weight: 10
@@ -7,8 +7,8 @@ status: active
 featured: true
 umbrella: public-safety-xr
 umbrella_label: XR for Public Safety
-summary: Modular augmented-reality interfaces for first responders.
-project_image: media/projects/firstmodular/logo.webp
+summary: A modular Unity framework for prototyping augmented-reality interfaces for first responders.
+project_image: media/projects/firstmodular/scenario-ems.png
 image_alt: FirstModulAR project collaboration graphic
 external_url: https://fmar.nextgeninteractions.com/
 ---

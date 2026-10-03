@@ -8,6 +8,4 @@ reading_time: false
 share: false
 ---
 
-The Interactive Realities Laboratory studies extended reality (XR), 3D interaction, immersive training and simulation, and applied XR systems for public safety and healthcare. Prospective students and collaborators whose interests align with this work are welcome to contact the lab director.
-
-Current projects include [FirstModulAR](../projects/firstmodular/), [VR De-Escalation Training](../projects/vr-deescalation/), and [Healthcare XR](../projects/healthcare-xr/). For inquiries, email [Dr. Regis Kopper](mailto:kopper@iastate.edu) or see the [contact page](../contact/).
+Interested in XR, 3D interaction, or immersive systems for public safety and healthcare? To discuss research opportunities or collaboration with IRLab at Iowa State University, contact Dr. Regis Kopper at [kopper@iastate.edu](mailto:kopper@iastate.edu) with a brief introduction and your interests.

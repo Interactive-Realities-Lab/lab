@@ -16,5 +16,5 @@ sections:
             - regis-kopper
     design:
       spacing:
-        padding: ["3rem", "0", "4rem", "0"]
+        padding: ["4rem", "0", "4rem", "0"]
 ---

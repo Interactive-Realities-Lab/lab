@@ -1,0 +1,100 @@
+{{- $logo := resources.Get "media/logo.svg" -}}
+{{- $project_section := site.GetPage "projects" -}}
+{{- $project_items := first 3 $project_section.RegularPages.ByWeight -}}
+{{- $all_publications := where site.RegularPages "Section" "publications" -}}
+{{- $publications := first 3 (sort $all_publications "Date" "desc") -}}
+{{- $profile := partial "functions/get_author_profile" (dict "slug" "regis-kopper") -}}
+{{- $author_data := index hugo.Data.authors "regis-kopper" | default dict -}}
+{{- $avatar := $profile.avatar -}}
+
+<div class="mx-auto max-w-7xl px-6 pb-20 pt-8 md:px-12 lg:px-16">
+  <section class="border-b border-slate-200 pb-14 pt-6 sm:pb-20 sm:pt-10" aria-labelledby="home-title">
+    <div class="flex items-center gap-6 sm:gap-9">
+      {{ with $logo }}
+        <img src="{{ .RelPermalink }}" alt="IRLab logo" width="856" height="1180" class="h-20 w-auto shrink-0 sm:h-28" loading="eager">
+      {{ end }}
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm">Iowa State University · Department of Computer Science</p>
+        <h1 id="home-title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">Interactive Realities Laboratory</h1>
+        <p class="mt-3 text-base font-medium text-slate-700 sm:text-xl">Designing effective interactions for extended reality.</p>
+      </div>
+    </div>
+    <p class="mt-9 max-w-4xl text-lg leading-relaxed text-slate-600 sm:mt-12 sm:text-xl sm:leading-8">We study how people interact with immersive technologies and how extended reality can support real-world work, training, and decision-making.</p>
+  </section>
+
+  <section class="border-b border-slate-200 py-16 sm:py-20" aria-labelledby="home-projects-title">
+    <div class="mb-9 flex flex-wrap items-end justify-between gap-5 sm:mb-11">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Research in action</p>
+        <h2 id="home-projects-title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Current projects</h2>
+      </div>
+      <a href="{{ $project_section.RelPermalink }}" class="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Explore all projects <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+      {{ range $project_items }}
+        {{- $project := . -}}
+        {{- $project_image := resources.Get .Params.project_image -}}
+        <article class="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white transition duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg">
+          <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100" aria-label="{{ .Title }}">
+            {{ with $project_image }}
+              {{- $image := .Fill "960x600 Center webp q84" -}}
+              <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $project.Params.image_alt | default $project.Title }}" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+            {{ else }}
+              <div class="flex h-full items-center justify-center bg-slate-100 text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">XR</div>
+            {{ end }}
+          </a>
+          <div class="flex flex-1 flex-col p-6 sm:p-7">
+            {{ with .Params.umbrella_label }}<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ . }}</p>{{ end }}
+            <h3 class="mt-2 text-xl font-bold leading-snug text-slate-950 sm:text-2xl"><a href="{{ .RelPermalink }}" class="group-hover:underline">{{ .Title }}</a></h3>
+            <p class="mt-3 flex-1 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
+            <a href="{{ .RelPermalink }}" class="mt-6 inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details <span class="ml-2" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="grid gap-8 border-b border-slate-200 py-16 sm:grid-cols-[1fr_auto] sm:items-center sm:py-20" aria-labelledby="home-team-title">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">People</p>
+      <h2 id="home-team-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Meet the team</h2>
+      <p class="mt-3 max-w-2xl leading-relaxed text-slate-600">Our lab brings together researchers who design and evaluate immersive interfaces for people and real-world settings.</p>
+      <a href="{{ "people/" | relURL }}" class="mt-5 inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Meet the team <span class="ml-2" aria-hidden="true">→</span></a>
+    </div>
+    <a href="{{ $author_data.website | default ("people/" | relURL) }}" class="flex items-center gap-4 sm:min-w-72">
+      {{ with $avatar }}{{- $image := .Fill "180x180 Smart q86" -}}<img src="{{ $image.RelPermalink }}" width="90" height="90" alt="{{ $profile.title }}" loading="lazy" class="h-[4.5rem] w-[4.5rem] rounded-full object-cover">{{ end }}
+      <span><span class="block font-semibold text-slate-950">{{ $profile.title }}</span><span class="mt-1 block text-sm text-slate-600">{{ $profile.role }}</span><span class="mt-1 block text-sm text-slate-500">Lab Director</span></span>
+    </a>
+  </section>
+
+  <section class="border-b border-slate-200 py-16 sm:py-20" aria-labelledby="home-publications-title">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Recent work</p>
+        <h2 id="home-publications-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Latest publications</h2>
+      </div>
+      <a href="{{ "publications/" | relURL }}" class="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">All publications <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="mt-5 divide-y divide-slate-200 border-y border-slate-200">
+      {{ range $publications }}
+        <li class="py-5 sm:py-6">
+          <a href="{{ .RelPermalink }}" class="font-semibold leading-snug text-slate-950 hover:underline">{{ .Title }}</a>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600"><span>{{ .Date.Format "2006" }}</span>{{ with .Params.publication.name }}<span aria-hidden="true"> · </span><span>{{ . }}</span>{{ end }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="mt-12 flex flex-col gap-5 bg-slate-50 p-6 sm:mt-14 sm:flex-row sm:items-center sm:justify-between sm:p-9" aria-labelledby="home-contact-title">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Get in touch</p>
+      <h2 id="home-contact-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Connect with IRLab</h2>
+      <p class="mt-2 text-slate-600">Department of Computer Science, Iowa State University · Ames, Iowa</p>
+    </div>
+    <div class="flex flex-wrap gap-3">
+      <a href="mailto:kopper@iastate.edu" class="inline-flex items-center justify-center bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-700">Email the lab</a>
+      <a href="{{ "contact/" | relURL }}" class="inline-flex items-center justify-center border border-slate-300 px-5 py-3 font-semibold text-slate-900 hover:border-slate-500">Contact details</a>
+    </div>
+  </section>
+</div>
