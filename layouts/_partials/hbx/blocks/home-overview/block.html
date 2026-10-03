@@ -48,7 +48,10 @@
             {{ with .Params.umbrella_label }}<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ . }}</p>{{ end }}
             <h3 class="mt-2 text-xl font-bold leading-snug text-slate-950 sm:text-2xl"><a href="{{ .RelPermalink }}" class="group-hover:underline">{{ .Title }}</a></h3>
             <p class="mt-3 flex-1 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
-            <a href="{{ .RelPermalink }}" class="mt-6 inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details <span class="ml-2" aria-hidden="true">→</span></a>
+            <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+              <a href="{{ .RelPermalink }}" class="inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details <span class="ml-2" aria-hidden="true">→</span></a>
+              {{ with .Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project website <span class="ml-2" aria-hidden="true">↗</span></a>{{ end }}
+            </div>
           </div>
         </article>
       {{ end }}
@@ -71,8 +74,8 @@
   <section class="border-b border-slate-200 py-16 sm:py-20" aria-labelledby="home-publications-title">
     <div class="flex flex-wrap items-end justify-between gap-4">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Recent work</p>
-        <h2 id="home-publications-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Latest publications</h2>
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Research Highlight</p>
+        <h2 id="home-publications-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Latest Research</h2>
       </div>
       <a href="{{ "publications/" | relURL }}" class="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">All publications <span aria-hidden="true">→</span></a>
     </div>

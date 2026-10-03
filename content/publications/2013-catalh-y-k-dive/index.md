@@ -1,7 +1,11 @@
 ---
 title: "̧ Catalhöyük @ DiVE -- Virtual reconstruction and immersive visualization of a Neolithic building"
 authors:
+  - "Nicola Lercari"
+  - "Maurizio Forte"
+  - "David Zielinski"
   - "Regis Kopper"
+  - "Rebecca Lai"
 date: "2013-01-01"
 hugoblox:
   ids:

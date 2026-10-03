@@ -3,6 +3,7 @@ title: "Dicas On Line"
 authors:
   - "Regis Kopper"
 date: "2001-01-01"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:107076688"

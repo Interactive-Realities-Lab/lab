@@ -1,7 +1,13 @@
 ---
 title: "Conference paper program chairs message"
 authors:
+  - "Ferran Argelaguet"
+  - "Tabitha Peck"
+  - "Gerd Bruder"
+  - "Christian Sandor"
   - "Regis Kopper"
+  - "Xubo Yang"
+  - "Marc Erich Latoschik"
 date: "2019-01-01"
 hugoblox:
   ids:

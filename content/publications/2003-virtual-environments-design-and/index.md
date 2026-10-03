@@ -2,6 +2,8 @@
 title: "Virtual Environments: Design and Implementation"
 authors:
   - "Regis Kopper"
+  - "Marcio S. Pinho"
+  - "Mauro Charão"
 date: "2003-01-01"
 hugoblox:
   ids:

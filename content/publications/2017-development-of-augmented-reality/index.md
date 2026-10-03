@@ -1,7 +1,12 @@
 ---
 title: "Development of Augmented Reality-Based Neuro-Navigation System for use in External Ventrictilar Drain Placement"
 authors:
+  - "Andrew Benjamin Cutler"
+  - "Shervin Rahimpour"
+  - "Yameng Liu"
+  - "Nandan Lad"
   - "Regis Kopper"
+  - "Patrick Codd"
 date: "2017-01-01"
 hugoblox:
   ids:

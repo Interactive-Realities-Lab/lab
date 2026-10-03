@@ -1,6 +1,7 @@
 ---
 title: "Efficient and Accurate Object 3D Selection With Eye Tracking-Based Progressive Refinement"
 authors:
+  - "Yunhan Wang"
   - "Regis Kopper"
 date: "2021-01-01"
 hugoblox:

@@ -2,6 +2,8 @@
 title: "A Human Motor Behavior Model for Direct Pointing at a Distance"
 authors:
   - "Regis Kopper"
+  - "Doug A Bowman"
+  - "Mara G Silva"
 date: "2008-01-01"
 hugoblox:
   ids:

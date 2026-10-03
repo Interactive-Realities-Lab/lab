@@ -1,6 +1,9 @@
 ---
 title: "Reshaping Remote Sensing and Virtual Reality at ̧ Catalhöyük"
 authors:
+  - "Nicola Lercari"
+  - "Maurizio Forte"
+  - "Emmanuel Shiferaw"
   - "Regis Kopper"
 date: "2014-01-01"
 hugoblox:

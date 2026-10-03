@@ -1,6 +1,8 @@
 ---
 title: "Towards a Virtual Memory Palace"
 authors:
+  - "Angelina Chang Liu"
+  - "Brian Hyun-jong Lee"
   - "Regis Kopper"
 date: "2019-01-01"
 hugoblox:

@@ -1,6 +1,13 @@
 ---
 title: "Evaluating effectiveness in virtual environments with MR simulation"
 authors:
+  - "Doug A Bowman"
+  - "Cheryl Stinson"
+  - "Eric D Ragan"
+  - "Siroberto Scerbo"
+  - "Tobias Höllerer"
+  - "Cha Lee"
+  - "Ryan P McMahan"
   - "Regis Kopper"
 date: "2012-01-01"
 hugoblox:

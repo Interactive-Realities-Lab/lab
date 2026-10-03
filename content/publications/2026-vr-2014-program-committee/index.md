@@ -3,6 +3,7 @@ title: "VR 2014 Program Committee"
 authors:
   - "Regis Kopper"
 date: "2026-10-03"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:107076676"

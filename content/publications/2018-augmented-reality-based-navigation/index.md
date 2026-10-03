@@ -2,6 +2,11 @@
 title: "Augmented reality-based navigation for use in surgical and non-surgical procedures"
 authors:
   - "Regis Kopper"
+  - "David Zielinski"
+  - "Andrew Cutler"
+  - "Nandan Lad"
+  - "Patrick Codd"
+  - "Shervin Rahimpour"
 date: "2018-01-01"
 hugoblox:
   ids:

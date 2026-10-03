@@ -3,6 +3,7 @@ title: "Advances in Visual Computing: 11th International Symposium, ISVC 2015, L
 authors:
   - "Regis Kopper"
 date: "2015-01-01"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:107076708"

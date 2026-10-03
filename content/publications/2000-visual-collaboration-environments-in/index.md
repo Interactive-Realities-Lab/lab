@@ -1,6 +1,9 @@
 ---
 title: "Visual Collaboration Environments in Education"
 authors:
+  - "Liane Tarouco"
+  - "Marie-Christine Julie Mascarenhas Fabre"
+  - "Rodrigo dos Santos Keller"
   - "Regis Kopper"
 date: "2000-01-01"
 hugoblox:

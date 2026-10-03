@@ -1,7 +1,12 @@
 ---
 title: "O Uncanny Valley das Mãos Virtuais em Aplicações de Realidade Virtual Imersiva: uma Revisão Sistemática da Literatura"
 authors:
+  - "Eduardo Gabriel Queiroz Palmeira"
+  - "Victor Biagiotti Saint Martin"
+  - "Ígor Andrade Moraes"
   - "Regis Kopper"
+  - "Edgard Afonso Lamounier Júnior"
+  - "Alexandre Cardoso"
 date: "2020-01-01"
 hugoblox:
   ids:

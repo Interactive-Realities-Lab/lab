@@ -2,6 +2,8 @@
 title: "Systems and methods for using sensing of real object position, trajectory, or attitude to enable user interaction with a virtual object"
 authors:
   - "Regis Kopper"
+  - "Derek Nankivil"
+  - "David Zielinski"
 date: "2019-12-01"
 hugoblox:
   ids:

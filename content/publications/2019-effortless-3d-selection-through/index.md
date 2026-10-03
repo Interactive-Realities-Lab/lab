@@ -1,7 +1,9 @@
 ---
 title: "Effortless 3D Selection through Progressive Refinement."
 authors:
+  - "Doug A Bowman"
   - "Regis Kopper"
+  - "Felipe Bacim"
 date: "2019-01-01"
 hugoblox:
   ids:

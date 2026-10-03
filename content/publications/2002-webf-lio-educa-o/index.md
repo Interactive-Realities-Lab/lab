@@ -3,6 +3,7 @@ title: "Webfólio Educação a Dist̂ancia"
 authors:
   - "Regis Kopper"
 date: "2002-01-01"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:107076748"

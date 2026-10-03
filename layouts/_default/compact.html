@@ -1,14 +1,14 @@
 {{ define "main" }}
 <div class="mx-auto flex max-w-screen-xl">
   <article class="flex min-h-[calc(100vh-var(--navbar-height))] w-full min-w-0 justify-center pb-8">
-    <main class="w-full max-w-5xl px-6 pt-6 md:px-12">
+    <div class="w-full max-w-5xl px-6 pt-6 md:px-12">
       <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl" data-pagefind-meta="title" data-pagefind-body>
         {{ .Title }}
       </h1>
 
       {{ with .Params.external_url }}
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-800 transition-colors hover:border-slate-900 hover:bg-slate-50 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-700">
-          Visit project website
+          Project website
           <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M6 14 14 6M7 6h7v7" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -36,7 +36,7 @@
         {{ end }}
         {{ .Content }}
       </div>
-    </main>
+    </div>
   </article>
 </div>
 {{ end }}

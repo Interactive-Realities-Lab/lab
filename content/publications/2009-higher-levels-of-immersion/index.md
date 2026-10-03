@@ -1,6 +1,9 @@
 ---
 title: "Higher Levels of Immersion Improve Procedure Memorization Performance"
 authors:
+  - "Doug Bowman"
+  - "Ajith Sowndararajan"
+  - "Eric Ragan"
   - "Regis Kopper"
 date: "2009-01-01"
 hugoblox:

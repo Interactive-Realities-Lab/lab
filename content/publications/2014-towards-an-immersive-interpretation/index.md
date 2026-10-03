@@ -1,6 +1,9 @@
 ---
 title: "Towards an Immersive Interpretation of Çatalhöyük at DiVE"
 authors:
+  - "Nicola Lercari"
+  - "Stephanie Matthiesen"
+  - "David Zielinski"
   - "Regis Kopper"
 date: "2014-01-01"
 hugoblox:

@@ -9,7 +9,7 @@ umbrella: public-safety-xr
 umbrella_label: XR for Public Safety
 summary: A modular Unity framework for prototyping augmented-reality interfaces for first responders.
 project_image: media/projects/firstmodular/scenario-ems.png
-image_alt: FirstModulAR project collaboration graphic
+image_alt: FirstModulAR emergency medical services simulation with AR interface panels.
 external_url: https://fmar.nextgeninteractions.com/
 ---
 

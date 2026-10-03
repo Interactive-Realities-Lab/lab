@@ -1,6 +1,8 @@
 ---
 title: "Granulated Rest Frames Outperform Field of View Restrictors on Visual Search Performance"
 authors:
+  - "Zekun Cao"
+  - "Jeronimo Grandi"
   - "Regis Kopper"
 date: "2021-01-01"
 hugoblox:

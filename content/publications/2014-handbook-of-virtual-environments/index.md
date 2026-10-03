@@ -1,7 +1,9 @@
 ---
 title: "Handbook of virtual environments: design, implementation and applications"
 authors:
+  - "Ryan P. McMahan"
   - "Regis Kopper"
+  - "Doug A. Bowman"
 date: "2014-01-01"
 hugoblox:
   ids:

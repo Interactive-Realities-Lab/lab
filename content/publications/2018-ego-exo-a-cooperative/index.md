@@ -1,7 +1,9 @@
 ---
 title: "EGO-EXO: A Cooperative Manipulation Technique with Automatic Viewpoint Control"
 authors:
+  - "Leonardo Pavanatto Soares"
   - "Regis Kopper"
+  - "Márcio Sarroglia Pinho"
 date: "2018-01-01"
 hugoblox:
   ids:

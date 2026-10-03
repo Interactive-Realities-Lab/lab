@@ -1,6 +1,8 @@
 ---
 title: "VR Developer Gems"
 authors:
+  - "Doug A. Bowman"
+  - "Felipe Bacim"
   - "Regis Kopper"
 date: "2019-01-01"
 hugoblox:

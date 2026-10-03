@@ -1,7 +1,10 @@
 ---
 title: "Volume Visualization on a WIM: Design Considerations and Planned Evaluations"
 authors:
+  - "Dennis Lynch"
+  - "David Borland"
   - "Regis Kopper"
+  - "Tabitha Peck"
 date: "2014-01-01"
 hugoblox:
   ids:

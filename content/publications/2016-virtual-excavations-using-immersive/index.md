@@ -1,6 +1,11 @@
 ---
 title: "Virtual Excavations: using immersive technologies to visualize and interact with Itapeva's archaeological site"
 authors:
+  - "Eduardo Zilles Borba"
+  - "Marcio Cabral"
+  - "R Lopes"
+  - "Marcelo Zuffo"
+  - "Astolfo Araújo"
   - "Regis Kopper"
 date: "2016-01-01"
 hugoblox:

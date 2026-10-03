@@ -1,7 +1,11 @@
 ---
 title: "The Effects of Visual Realism on Training Transfer in Immersive Virtual Environments"
 authors:
+  - "Cheryl Stinson"
+  - "Siroberto Scerbo"
+  - "Eric Ragan"
   - "Regis Kopper"
+  - "Doug Bowman"
 date: "2011-01-01"
 hugoblox:
   ids:

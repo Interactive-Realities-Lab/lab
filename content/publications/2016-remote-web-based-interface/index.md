@@ -1,7 +1,15 @@
 ---
 title: "Remote, web-based interface control of handheld swept source OCT system for acute care settings"
 authors:
+  - "Rajvi Mehta"
+  - "Derek Nankivil"
+  - "David J Zielinski"
+  - "Gar Waterman"
+  - "Brenton Keller"
+  - "Prakruth Adari"
   - "Regis Kopper"
+  - "Joseph A Izatt"
+  - "Anthony N Kuo"
 date: "2016-01-01"
 hugoblox:
   ids:

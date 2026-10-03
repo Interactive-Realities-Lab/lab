@@ -1,7 +1,12 @@
 ---
 title: "The Effect of Virtual Reality on Knowledge Transfer and Retention in Collaborative Group-Based Learning for Neuroanatomy Students"
 authors:
+  - "Vinicius Souza"
+  - "Anderson Maciel"
+  - "Luciana Nedel"
   - "Regis Kopper"
+  - "Klaus Loges"
+  - "Eliane Schlemmer"
 date: "2020-01-01"
 hugoblox:
   ids:

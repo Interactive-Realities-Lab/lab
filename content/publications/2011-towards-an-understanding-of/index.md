@@ -2,6 +2,8 @@
 title: "Towards an Understanding of the Effects of Amplified Head Rotations"
 authors:
   - "Regis Kopper"
+  - "Cheryl Stinson"
+  - "D Bowman"
 date: "2011-01-01"
 hugoblox:
   ids:

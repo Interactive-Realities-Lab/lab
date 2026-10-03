@@ -1,7 +1,11 @@
 ---
 title: "BABES-Brushing+ Linking, Attributes, and Blobs Extension to Storyboard"
 authors:
+  - "Tejinder Judge"
   - "Regis Kopper"
+  - "Sean Ponce"
+  - "Mara Silva"
+  - "Chris North"
 date: "2008-01-01"
 hugoblox:
   ids:

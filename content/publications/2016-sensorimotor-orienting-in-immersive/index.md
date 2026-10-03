@@ -1,7 +1,16 @@
 ---
 title: "Sensorimotor orienting in immersive virtual reality: EEG correlates of skill learning"
 authors:
+  - "L. Gregory Appelbaum"
+  - "Jillian Clements"
+  - "Yvonne Lu"
+  - "Hrishikesh M. Rao"
+  - "Rajan Khanna"
+  - "David J. Zielinski"
+  - "Kelly Vittatoe"
+  - "Nicholas D. Potter"
   - "Regis Kopper"
+  - "Marc A. Sommer"
 date: "2016-01-01"
 hugoblox:
   ids:

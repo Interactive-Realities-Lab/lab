@@ -1,7 +1,9 @@
 ---
 title: "Principles for Designing Effective 3D Interaction Techniques."
 authors:
+  - "Ryan P McMahan"
   - "Regis Kopper"
+  - "Doug A Bowman"
 date: "2014-01-01"
 hugoblox:
   ids:

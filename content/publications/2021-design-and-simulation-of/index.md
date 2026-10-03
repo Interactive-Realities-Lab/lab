@@ -1,6 +1,9 @@
 ---
 title: "Design and Simulation of Next-Generation Augmented Reality User Interfaces in Virtual Reality"
 authors:
+  - "Jerônimo G Grandi"
+  - "Zekun Cao"
+  - "Mark Ogren"
   - "Regis Kopper"
 date: "2021-01-01"
 hugoblox:

@@ -1,7 +1,10 @@
 ---
 title: "Virtual human personality masks: a human computation approach to modeling verbal personalities in virtual humans"
 authors:
+  - "Vaishnavi Krishnan"
+  - "Adriana Foster"
   - "Regis Kopper"
+  - "Benjamin Lok"
 date: "2012-01-01"
 hugoblox:
   ids:

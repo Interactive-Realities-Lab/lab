@@ -2,6 +2,7 @@
 title: "Human motor behavior model for distant pointing tasks"
 authors:
   - "Regis Kopper"
+  - "Doug A. Bowman"
 date: "2009-01-01"
 hugoblox:
   ids:

@@ -1,6 +1,8 @@
 ---
 title: "Effects of perceptual load in visual search in immersive virtual reality"
 authors:
+  - "Bettina Olk"
+  - "David Zielinski"
   - "Regis Kopper"
 date: "2015-01-01"
 hugoblox:

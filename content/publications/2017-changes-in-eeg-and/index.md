@@ -1,7 +1,16 @@
 ---
 title: "Changes in EEG and movement kinematics accompany sensorimotor learning in immersive virtual reality"
 authors:
+  - "L. Gregory Appelbaum"
+  - "Jillian Clements"
+  - "Hrishikesh M. Rao"
+  - "Rajan Khanna"
+  - "David J. Zielinski"
+  - "Yvonne Lu"
+  - "Kelly Vittatoe"
+  - "Nicholas D. Potter"
   - "Regis Kopper"
+  - "Marc A. Sommer"
 date: "2017-01-01"
 hugoblox:
   ids:

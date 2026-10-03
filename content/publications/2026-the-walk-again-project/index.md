@@ -3,6 +3,7 @@ title: "The Walk Again Project: Using a Brain-Machine Interface for establishing
 authors:
   - "Regis Kopper"
 date: "2026-10-03"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:53337565"

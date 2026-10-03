@@ -2,6 +2,9 @@
 title: "Interactive Memoirs: Coping with the Imminent Death and Leaving Legacies"
 authors:
   - "Regis Kopper"
+  - "Mallory McManamon"
+  - "Thomas George"
+  - "Benjamin Lok"
 date: "2012-01-01"
 hugoblox:
   ids:

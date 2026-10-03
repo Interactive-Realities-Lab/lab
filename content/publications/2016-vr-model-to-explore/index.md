@@ -1,6 +1,10 @@
 ---
 title: "VR model to explore archaeological sites in a non-destructive way"
 authors:
+  - "Eduardo Zilles Borba"
+  - "Marcio Cabral"
+  - "Roseli Lopes"
+  - "Marcelo Zuffo"
   - "Regis Kopper"
 date: "2016-01-01"
 hugoblox:

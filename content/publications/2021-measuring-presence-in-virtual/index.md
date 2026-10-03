@@ -1,6 +1,9 @@
 ---
 title: "Measuring Presence in Virtual Environments: A Survey"
 authors:
+  - "Vinicius Souza"
+  - "Anderson Maciel"
+  - "Luciana Nedel"
   - "Regis Kopper"
 date: "2021-01-01"
 hugoblox:

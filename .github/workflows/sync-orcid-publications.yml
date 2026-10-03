@@ -32,16 +32,23 @@ jobs:
         env:
           ORCID_ID: "0000-0003-2081-7061"
         run: |
-          python -m pip install "hugobloxorcid==0.3.0"
+          python -m pip install "hugobloxorcid==0.3.0" "pybtex==0.26.1" "PyYAML==6.0.3"
           hugoblox-orcid-import "$ORCID_ID" \
             --output "$RUNNER_TEMP/orcid-publications" \
             --no-download-pdf \
             --no-import-grants
 
-      - name: Add only newly discovered publications
+      - name: Validate imported metadata and skip duplicates
+        env:
+          ORCID_ID: "0000-0003-2081-7061"
         run: |
           python scripts/normalize_orcid_publications.py "$RUNNER_TEMP/orcid-publications"
-          rsync -a --ignore-existing "$RUNNER_TEMP/orcid-publications/" content/publications/
+          python scripts/validate_orcid_publications.py \
+            --imported "$RUNNER_TEMP/orcid-publications" \
+            --existing content/publications \
+            --output "$RUNNER_TEMP/validated-publications" \
+            --orcid-id "$ORCID_ID"
+          rsync -a --ignore-existing "$RUNNER_TEMP/validated-publications/" content/publications/
 
       - name: Open a reviewable update
         uses: peter-evans/create-pull-request@v8
@@ -53,5 +60,5 @@ jobs:
           body: |
             This automated update adds publications newly discovered in Regis Kopper's public ORCID record.
 
-            Please review titles, dates, authors, publication status, and links before merging. Existing publication files are never overwritten.
+            Publication years and authors were resolved from ORCID, its BibTeX citation, and Crossref when a DOI is available. Records with missing or conflicting essentials and duplicate titles were skipped. BibTeX can itself omit contributors, so please verify every author list, title, publication status, and link before merging. Existing publication files are never overwritten.
           labels: automated-pr, content, publications

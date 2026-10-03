@@ -1,7 +1,11 @@
 ---
 title: "The Effects of Physiologically-Adaptive Virtual Environment on User's Sense of Presence"
 authors:
+  - "Vinicius Costa de Souza"
+  - "Luciana Nedel"
   - "Regis Kopper"
+  - "Anderson Maciel"
+  - "Leonardo Tagliaro"
 date: "2018-01-01"
 hugoblox:
   ids:

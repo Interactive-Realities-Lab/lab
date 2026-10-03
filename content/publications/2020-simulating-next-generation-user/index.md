@@ -1,6 +1,9 @@
 ---
 title: "Simulating Next-Generation User Interfaces for Law Enforcement Traffic Stops"
 authors:
+  - "Jerônimo G Grandi"
+  - "Zekun Cao"
+  - "Mark Ogren"
   - "Regis Kopper"
 date: "2020-01-01"
 hugoblox:

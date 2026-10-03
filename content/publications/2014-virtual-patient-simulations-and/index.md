@@ -1,7 +1,12 @@
 ---
 title: "Virtual patient simulations and optimal social learning context: A replication of an aptitude--treatment interaction effect"
 authors:
+  - "Teresa R Johnson"
+  - "Rebecca Lyons"
   - "Regis Kopper"
+  - "Kyle J Johnsen"
+  - "Benjamin C Lok"
+  - "Juan C Cendan"
 date: "2014-01-01"
 hugoblox:
   ids:

@@ -1,6 +1,8 @@
 ---
 title: "An approach to designing next generation user interfaces for public-safety organizations"
 authors:
+  - "Jerônimo G Grandi"
+  - "Mark Ogren"
   - "Regis Kopper"
 date: "2019-01-01"
 hugoblox:

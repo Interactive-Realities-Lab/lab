@@ -2,6 +2,9 @@
 title: "Increasing the Precision of Distant Pointing for Large High-Resolution Displays"
 authors:
   - "Regis Kopper"
+  - "Mara G. Silva"
+  - "Ryan P. McMahan"
+  - "Doug A. Bowman"
 date: "2008-01-01"
 hugoblox:
   ids:

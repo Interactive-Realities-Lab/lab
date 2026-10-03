@@ -1,7 +1,14 @@
 ---
 title: "Evaluating Effectiveness in Virtual Environments with MR Simulation"
 authors:
-  - "Regis Kopper"
+  - "D. Bowman"
+  - "R. McMahan"
+  - "C. Stinson"
+  - "E. Ragan"
+  - "S. Scerbo"
+  - "T. Hollerer"
+  - "C. Lee"
+  - "R. Kopper"
 date: "2011-01-01"
 hugoblox:
   ids:

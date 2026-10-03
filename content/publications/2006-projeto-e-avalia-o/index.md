@@ -3,6 +3,7 @@ title: "Projeto e avaliação de técnicas de navegação para ambientes virtuai
 authors:
   - "Regis Kopper"
 date: "2006-01-01"
+draft: true
 hugoblox:
   ids:
     orcid: "0000-0003-2081-7061:107076701"

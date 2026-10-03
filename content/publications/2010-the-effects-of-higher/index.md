@@ -1,7 +1,10 @@
 ---
 title: "The Effects of Higher Levels of Immersion on Procedure Memorization Performance and Implications for Educational Virtual Environments"
 authors:
-  - "Eric D. Ragan"
+  - "Eric D Ragan"
+  - "Ajith Sowndararajan"
+  - "Regis Kopper"
+  - "Doug A Bowman"
 date: "2010-01-01"
 hugoblox:
   ids:
