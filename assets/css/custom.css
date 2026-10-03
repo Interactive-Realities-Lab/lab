@@ -49,7 +49,47 @@
 
 #site-header .nav-link:hover,
 #site-header .nav-link:focus-visible {
-  color: #6576bd;
+  color: #35469a;
+}
+
+.skip-to-content {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #0f172a;
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+
+.skip-to-content:focus-visible {
+  transform: translateY(0);
+}
+
+:is(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 3px;
+}
+
+/* The theme's menu checkbox needs to stay in the keyboard tab order. */
+#nav-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+#nav-toggle:focus-visible + label {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 4px;
+}
+
+@media (min-width: 1024px) {
+  #nav-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 580px) {
@@ -175,7 +215,7 @@ html:has(head link[rel="canonical"][href*="/publications/"]) article > main > .m
 }
 
 .hb-attachment-link-large:focus-visible {
-  outline: 3px solid rgb(99 102 241 / 35%);
+  outline: 3px solid #1d4ed8;
   outline-offset: 2px;
 }
 
