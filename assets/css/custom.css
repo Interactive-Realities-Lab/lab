@@ -222,7 +222,7 @@ html:has(head link[rel="canonical"][href*="/publications/"]) article > main > .m
 /* Present citation metrics as a compact, aligned group of badges. */
 .pub-list-item > [aria-label="Publication metrics"] {
   box-sizing: border-box;
-  width: 10.5rem;
+  width: 4.5rem;
   min-height: 4.5rem;
   align-self: center;
   align-items: center;
@@ -231,7 +231,6 @@ html:has(head link[rel="canonical"][href*="/publications/"]) article > main > .m
   padding: 0;
 }
 
-.pub-list-item > [aria-label="Publication metrics"] > .altmetric-embed,
 .pub-list-item > [aria-label="Publication metrics"] > .__dimensions_badge_embed__ {
   display: inline-flex;
   flex: 0 0 3.5rem;
