@@ -2,6 +2,9 @@
 title: "Shakrin Jahan Mozumder"
 role: "PhD Student, Computer Science"
 
+image:
+  filename: "media/authors/shakrin-jahan-mozumder.webp"
+
 interests:
   - Virtual Reality (VR)
   - Human-Computer Interaction (HCI)
