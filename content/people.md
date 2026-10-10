@@ -14,7 +14,7 @@ sections:
         - name: Lab Director
           members:
             - regis-kopper
-        - name: Lab Assistants
+        - name: Undergraduate Students
           members:
             - ethen-santana
         - name: PhD Students
