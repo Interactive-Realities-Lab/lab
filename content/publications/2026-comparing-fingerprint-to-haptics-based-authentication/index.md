@@ -13,11 +13,13 @@ draft: false
 publication_types:
   - "paper-conference"
 
-publication: "2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)"
+publication:
+  name: "2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)"
+  short_name: "IEEE VRW 2026"
 
-publication_short: "IEEE VRW 2026"
-
-doi: "10.1109/VRW70859.2026.00302"
+hugoblox:
+  ids:
+    doi: "10.1109/VRW70859.2026.00302"
 
 abstract: >-
   Secure and seamless authentication in extended reality (XR) environments
