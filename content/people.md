@@ -11,7 +11,7 @@ sections:
       title: People
       text: The Interactive Realities Laboratory is directed by Dr. Regis Kopper.
       groups:
-        - name: Faculty
+        - name: Lab Director
           members:
             - regis-kopper
         - name: PhD Students
