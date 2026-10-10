@@ -3,7 +3,7 @@ title: "Shakrin Jahan Mozumder"
 role: "PhD Student, Computer Science"
 
 image:
-  filename: "media/authors/shakrin-jahan-mozumder.webp"
+  filename: "media/authors/shakrin-jahan-mozumder.jpg"
 
 interests:
   - Virtual Reality (VR)
