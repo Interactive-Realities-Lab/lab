@@ -14,6 +14,9 @@ sections:
         - name: Lab Director
           members:
             - regis-kopper
+        - name: Undergraduate Students
+          members:
+            - ethen-santana
         - name: PhD Students
           members:
             - jie-ding
