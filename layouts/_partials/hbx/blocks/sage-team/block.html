@@ -10,43 +10,44 @@
   </header>
 
   {{ range $group_index, $group := $groups }}
-    <section class="{{ if gt $group_index 0 }}mt-16{{ end }}">
-      <h2 class="mb-8 border-b border-gray-200 pb-3 text-center text-2xl font-semibold text-gray-900">{{ $group.name }}</h2>
-      <div class="flex flex-wrap justify-center gap-x-8 gap-y-12">
-        {{ range $group.members }}
-          {{- $profile := partial "functions/get_author_profile" (dict "slug" .) -}}
-          {{- $author_data := index hugo.Data.authors . | default dict -}}
-          {{- $avatar := $profile.avatar -}}
-          {{- $profile_url := $author_data.website | default (printf "authors/%s/" $profile.slug | relLangURL) -}}
-          {{- $given := $profile.name_given | default $profile.title -}}
-          {{- $initial := upper (substr $given 0 1) -}}
-          <article class="flex w-56 flex-col items-center text-center">
-            <a href="{{ $profile_url }}" class="block h-44 w-44 overflow-hidden rounded-full bg-gray-100" aria-label="{{ $profile.title }}">
-              {{ if $avatar }}
-                {{ $image := $avatar.Fill "400x400 Smart q90" }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ $profile.title }}" width="400" height="400" loading="lazy" class="h-full w-full object-cover">
-              {{ else }}
-                <span class="flex h-full w-full items-center justify-center text-5xl font-medium text-gray-400" aria-hidden="true">{{ $initial }}</span>
+    {{ if gt (len ($group.members | default slice)) 0 }}
+      <section class="{{ if gt $group_index 0 }}mt-16{{ end }}">
+        <h2 class="mb-8 border-b border-gray-200 pb-3 text-center text-2xl font-semibold text-gray-900">{{ $group.name }}</h2>
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-12">
+          {{ range $group.members }}
+            {{- $profile := partial "functions/get_author_profile" (dict "slug" .) -}}
+            {{- $author_data := index hugo.Data.authors . | default dict -}}
+            {{- $avatar := $profile.avatar -}}
+            {{- $profile_url := $author_data.website | default (printf "authors/%s/" $profile.slug | relLangURL) -}}
+            {{- $given := $profile.name_given | default $profile.title -}}
+            {{- $initial := upper (substr $given 0 1) -}}
+            <article class="flex w-56 flex-col items-center text-center">
+              <a href="{{ $profile_url }}" class="block h-44 w-44" aria-label="{{ $profile.title }}">
+                {{ if $avatar }}
+                  <img src="{{ $avatar.RelPermalink }}" alt="{{ $profile.title }}" width="400" height="400" loading="lazy" class="h-full w-full object-contain">
+                {{ else }}
+                  <span class="flex h-full w-full items-center justify-center text-5xl font-medium text-gray-400" aria-hidden="true">{{ $initial }}</span>
+                {{ end }}
+              </a>
+              <h3 class="mt-5 text-xl font-semibold text-gray-950">
+                <a href="{{ $profile_url }}" class="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900">{{ $profile.title }}</a>
+              </h3>
+              {{ with $profile.role }}<p class="mt-1 text-gray-600">{{ . }}</p>{{ end }}
+              {{ with $profile.affiliations }}
+                {{ $affiliation := index . 0 }}
+                <p class="mt-1 text-sm text-gray-500">
+                  {{ if $affiliation.url }}<a href="{{ $affiliation.url }}" class="underline underline-offset-2">{{ $affiliation.name }}</a>{{ else }}{{ $affiliation.name }}{{ end }}
+                </p>
               {{ end }}
-            </a>
-            <h3 class="mt-5 text-xl font-semibold text-gray-950">
-              <a href="{{ $profile_url }}" class="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900">{{ $profile.title }}</a>
-            </h3>
-            {{ with $profile.role }}<p class="mt-1 text-gray-600">{{ . }}</p>{{ end }}
-            {{ with $profile.affiliations }}
-              {{ $affiliation := index . 0 }}
-              <p class="mt-1 text-sm text-gray-500">
-                {{ if $affiliation.url }}<a href="{{ $affiliation.url }}" class="underline underline-offset-2">{{ $affiliation.name }}</a>{{ else }}{{ $affiliation.name }}{{ end }}
-              </p>
-            {{ end }}
-            {{ with $profile.links }}
-              <div class="mt-4">
-                {{ partial "social_links" (dict "Params" (dict "profiles" .)) }}
-              </div>
-            {{ end }}
-          </article>
-        {{ end }}
-      </div>
-    </section>
+              {{ with $profile.links }}
+                <div class="mt-4">
+                  {{ partial "social_links" (dict "Params" (dict "profiles" .)) }}
+                </div>
+              {{ end }}
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
   {{ end }}
 </div>
