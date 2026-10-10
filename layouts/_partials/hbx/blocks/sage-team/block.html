@@ -22,14 +22,14 @@
             {{ range $members }}
               {{- $profile := partial "functions/get_author_profile" (dict "slug" .) -}}
               {{- $author_data := index hugo.Data.authors . | default dict -}}
-              {{- $avatar := $author_data.avatar -}}
+              {{- $avatar := resources.Get $author_data.avatar -}}
               {{- $profile_url := $author_data.website | default (printf "authors/%s/" $profile.slug | relLangURL) -}}
               {{- $given := $profile.name_given | default $profile.title -}}
               {{- $initial := upper (substr $given 0 1) -}}
               <article class="people-card">
                 <a href="{{ $profile_url }}" class="people-avatar" aria-label="View {{ $profile.title }}'s profile">
                   {{ if $avatar }}
-                    <img src="{{ $avatar | relURL }}" alt="Portrait of {{ $profile.title }}" loading="lazy">
+                    <img src="{{ $avatar.RelPermalink }}" alt="Portrait of {{ $profile.title }}" loading="lazy">
                   {{ else }}
                     <span aria-hidden="true">{{ $initial }}</span>
                   {{ end }}
