@@ -26,7 +26,7 @@ Jie is a PhD student in Human-Computer Interaction at Iowa State University. Her
 
 Existing website photo: media/authors/jie-ding.webp
 
-Replacement photo filename: [optional relative filename in this folder]
+Replacement photo filename: [Optional uploaded filename]
 
 ## Current work
 
