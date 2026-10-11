@@ -6,24 +6,34 @@ Student level: PhD student
 
 University: Iowa State University
 
-Role or degree program: [add your confirmed role; do not guess]
+Role: PhD Student in Computer Science
 
 ## Biography
 
-[Add a 50–80 word biography in English.]
+Rafid Mostafiz is a PhD student in Computer Science at Iowa State University, working under the supervision of Dr. Regis Kopper. His research interests include virtual reality, human-computer interaction, computer vision, and machine learning. His current research focuses on evaluating virtual reality interaction techniques for distant-object manipulation. He also has research experience in deep learning and medical image analysis.
 
-## Research interests
+## Research Interests
 
-[List 3–5 research interests.]
+- Virtual Reality (VR) and Extended Reality (XR)
+- Human-Computer Interaction (HCI)
+- Computer Vision
+- Machine Learning and Deep Learning
+- Explainable AI and Medical Image Analysis
 
-## Current IRLab project(s)
+## Current Work
 
-[Name your current IRLab project(s) and briefly describe your contribution. If no project is assigned, write "Not yet assigned". Do not invent a project.]
+Evaluating virtual reality interaction techniques for distant-object manipulation.
 
 ## Links
 
-[Optional public website, Google Scholar, GitHub, or LinkedIn links; remove if unused.]
+- [University Profile](https://nstu.ac.bd/departments/IIT(SE)/teacher/profile/71#)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=ATR5BEEAAAAJ)
+- [GitHub](https://github.com/rafidiit-ops)
+- [LinkedIn](https://www.linkedin.com/in/rafid-mostafiz-8b8055130/)
+- [ORCID](https://orcid.org/0000-0002-5905-6530)
 
 ## Photo
 
-Photo filename: [Upload your profile photo in this folder and enter its relative filename, such as portrait.jpg.]
+Existing website photo: media/authors/rafid-mostafiz.jpeg
+
+Replacement photo filename: [Optional uploaded filename]
