@@ -1,6 +1,6 @@
 # Fahmida Imrose — Updates
 
-Add new news, papers, and project updates below, newest first. Copy this block for each item. For papers, confirm the status: unpublished draft, preprint, accepted, or published.
+Add news, papers, and project updates below, newest first. Copy this block for each item. For papers, confirm the status: unpublished draft, preprint, accepted, or published.
 
 ## [Title]
 
