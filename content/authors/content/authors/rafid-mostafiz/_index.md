@@ -1,0 +1,1 @@
+Rafid Mostafiz is a Ph.D. student in Computer Science at Iowa State University. His research focuses on virtual reality, human-computer interaction, and interaction techniques for manipulating distant objects in immersive environments.
