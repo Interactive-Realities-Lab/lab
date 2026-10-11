@@ -1,0 +1,52 @@
+
+schema: hugoblox/author/v1
+slug: rafid-mostafiz
+is_owner: false
+
+name:
+  display: Rafid Mostafiz
+  given: Rafid
+  family: Mostafiz
+
+role: PhD Student in Computer Science
+
+bio: >-
+  Rafid Mostafiz is a PhD student in Computer Science at Iowa State
+  University, working under the supervision of Dr. Regis Kopper.
+  His research interests include virtual reality, human-computer
+  interaction, computer vision, and machine learning. His current
+  research focuses on evaluating virtual reality interaction
+  technique for distant-object manipulation. He also has research
+  experience in deep learning and medical image analysis.
+
+avatar: media/authors/rafid-mostafiz.webp
+
+website: "https://nstu.ac.bd/departments/IIT(SE)/teacher/profile/71#"
+
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+
+links:
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?hl=en&user=ATR5BEEAAAAJ
+    label: Google Scholar
+  - icon: brands/github
+    url: https://github.com/rafidiit-ops
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/rafid-mostafiz-8b8055130/
+    label: LinkedIn
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-5905-6530
+    label: ORCID
+
+interests:
+  - Virtual Reality (VR) and Extended Reality (XR)
+  - Human-Computer Interaction (HCI)
+  - Computer Vision
+  - Machine Learning and Deep Learning
+  - Explainable AI and Medical Image Analysis
+
+user_groups:
+  - PhD Students
