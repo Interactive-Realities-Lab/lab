@@ -30,7 +30,7 @@ Each member already has a `profile.md`. Edit the same file for your first submis
 ## Already have a fork: prepare for a later request
 
 1. If your previous pull request is still open, continue editing its source branch in your own fork. Expected result: new commits update that request automatically. Do not open another request while it is pending.
-2. After your previous request is merged, open `YOUR-USERNAME/lab`, select **main**, click **Sync fork**, then **Update branch** if offered. Expected result: your fork is up to date with `Interactive-Realities-Lab/lab:main`.
+2. If you have no open pull request (including your first use of these instructions), open `YOUR-USERNAME/lab`, select **main**, click **Sync fork**, then **Update branch** if offered. Do this first if `submissions/` or your profile is missing from an older fork. Expected result: your fork is up to date with `Interactive-Realities-Lab/lab:main`. Repeat before a new request after the previous one is merged.
 3. If GitHub reports conflicts or offers to discard commits, keep your unsynced work and ask the maintainer for help. Expected result: your work remains available to resolve.
 
 ## Edit your profile
