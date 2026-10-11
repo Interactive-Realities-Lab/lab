@@ -28,20 +28,10 @@ Shakrin Jahan Mozumder is a PhD student in Computer Science at Iowa State Univer
 
 Existing website photo: media/authors/shakrin-jahan-mozumder.jpg
 
-Replacement photo filename: [optional relative filename in this folder]
+Replacement photo filename: [Optional uploaded filename]
 
 ## Current Research Projects
 
 ### Continuous Authentication in Extended Reality
 
 Investigating continuous user authentication in immersive virtual reality environments using physical behavioral movements.
-
-## Publications
-
-**Comparing Fingerprint to Haptics-Based Authentication Methods in XR Devices**
-
-Shakrin Jahan Mozumder, Fahmida Imrose, and Regis Kopper.
-
-2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW).
-
-DOI: https://doi.org/10.1109/VRW70859.2026.00302
