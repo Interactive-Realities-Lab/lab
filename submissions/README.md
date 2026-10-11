@@ -27,7 +27,7 @@ Each member already has a `profile.md`. Edit the same file for your first submis
 2. Click **Fork**, then **Create a new fork** if shown. Choose your own username as **Owner**, keep repository name `lab`, and click **Create fork**. Expected result: repository `YOUR-USERNAME/lab`.
 3. Select **main** in the branch menu. Expected result: your own fork shows its `main` branch. Use this branch for all edits and uploads below.
 
-## Already have a fork: prepare for a later request
+## Already have a fork: sync before a new request
 
 1. If your previous pull request is still open, continue editing its source branch in your own fork. Expected result: new commits update that request automatically. Do not open another request while it is pending.
 2. If you have no open pull request (including your first use of these instructions), open `YOUR-USERNAME/lab`, select **main**, click **Sync fork**, then **Update branch** if offered. Do this first if `submissions/` or your profile is missing from an older fork. Expected result: your fork is up to date with `Interactive-Realities-Lab/lab:main`. Repeat before a new request after the previous one is merged.
@@ -59,7 +59,7 @@ Templates: [Profile](templates/profile.md), [Project](templates/project.md), [Pu
 
 1. After committing all edits and uploads, open your fork's repository page and click **Contribute → Open pull request**, or **Compare & pull request** if offered. Expected result: GitHub shows a comparison of your commits.
 2. Check **base repository: Interactive-Realities-Lab/lab**, **base: main**, **head repository: YOUR-USERNAME/lab**, and **compare: main**. Review **Files changed**. Expected result: the request includes your intended submission files.
-3. Click **Create pull request**, enter a clear title and description, leave **Allow edits by maintainers** checked if offered, and click **Create pull request**. Expected result: an **Open** pull request with a number, such as **#12**.
+3. If GitHub shows only a comparison, click **Create pull request** to open the form. If the title and description fields are already visible, you are already on that form. Enter a clear title and description, leave **Allow edits by maintainers** checked if offered, and click **Create pull request**. Expected result: an **Open** pull request with a number, such as **#12**.
 4. Your submission is complete when you see **Open pull request #…**. Wait for review; you do not need to click **Merge**. For requested corrections, edit and commit the same files on the same source branch in your fork. Expected result: the existing request updates automatically.
 
 Maintainers: see [MAINTAINERS.md](MAINTAINERS.md).
