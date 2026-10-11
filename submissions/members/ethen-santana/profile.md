@@ -28,7 +28,7 @@ Ethen Santana is a Computer Science Undergraduate Student & Assistant Researcher
 
 Existing website photo: media/authors/ethen-santana.JPEG
 
-Replacement photo filename: [optional relative filename in this folder]
+Replacement photo filename: [Optional uploaded filename]
 
 ## Current Work
 

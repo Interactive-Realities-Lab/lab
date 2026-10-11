@@ -6,7 +6,7 @@ IRLab studies extended reality (XR), 3D interaction, immersive simulation and tr
 
 ## Member submissions
 
-Students can [submit profiles, projects, publications, and news in their browser](submissions/README.md). Maintainers follow the [manual intake guide](submissions/MAINTAINERS.md).
+Students can [submit profiles, projects, publications, and news in their browser](submissions/README.md). Maintainers follow the [website maintenance guide](docs/website-maintenance.md).
 
 ## Local preview
 
