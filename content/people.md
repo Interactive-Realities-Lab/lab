@@ -19,6 +19,7 @@ sections:
             - jie-ding
             - shakrin-jahan-mozumder
             - rafid-mostafiz
+            - tanim-ahmed
         - name: Master's Students
           members: []
         - name: Undergraduate Students
