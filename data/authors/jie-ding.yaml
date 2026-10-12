@@ -1,0 +1,24 @@
+schema: hugoblox/author/v1
+slug: jie-ding
+is_owner: false
+name:
+  display: Jie Ding
+  given: Jie
+  family: Ding
+role: PhD Student in Human-Computer Interaction
+bio: >-
+  Jie is a PhD student in Human-Computer Interaction at Iowa State University. Her research explores how extended reality (XR) interfaces, sensing, and real-time feedback can support precise interaction with physical objects. Her current work focuses on state-aware XR for physical manipulation. She also contributes to XR research for public safety through FirstModulAR.
+avatar: media/authors/jie-ding.webp
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/jie-ding-hci/
+    label: LinkedIn
+interests:
+  - Extended Reality
+  - Physical Interaction
+  - Sensing & State-Aware Feedback
+user_groups:
+  - PhD Students

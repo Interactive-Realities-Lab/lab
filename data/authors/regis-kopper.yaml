@@ -24,6 +24,9 @@ links:
   - icon: hero/globe-alt
     url: https://www.regiskopper.com/
     label: Personal website
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/regiskopper/
+    label: LinkedIn
 interests:
   - Extended Reality
   - 3D Interaction

@@ -14,6 +14,16 @@ sections:
         - name: Lab Director
           members:
             - regis-kopper
+        - name: PhD Students
+          members:
+            - jie-ding
+            - shakrin-jahan-mozumder
+            - rafid-mostafiz
+        - name: Master's Students
+          members: []
+        - name: Undergraduate Students
+          members:
+            - ethen-santana
     design:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]

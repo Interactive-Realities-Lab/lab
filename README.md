@@ -4,6 +4,10 @@ Website source for the Interactive Realities Laboratory (IRLab), directed by Dr.
 
 IRLab studies extended reality (XR), 3D interaction, immersive simulation and training, and applied XR systems for public safety and healthcare.
 
+## Member submissions
+
+Students can [submit profiles, projects, publications, and news in their browser](submissions/README.md). Maintainers follow the [website maintenance guide](docs/website-maintenance.md).
+
 ## Local preview
 
 On Windows, open PowerShell in this folder and run `./preview.ps1`. The script downloads the Hugo version used by the project and starts a local preview.

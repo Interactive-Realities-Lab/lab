@@ -1,0 +1,31 @@
+schema: hugoblox/author/v1
+slug: ethen-santana
+is_owner: false
+name:
+  display: Ethen Santana
+  given: Ethen
+  family: Santana
+role: Computer Science Undergraduate Student & Assistant Researcher
+website: https://github.com/JazzCat4
+bio: >-
+  Ethen Santana is a Computer Science Undergraduate Student & Assistant
+  Researcher at Iowa State University. He has previous research experience
+  in ethics of extended reality technology and LLM-aided hardware security
+  at the University of Iowa and University of South Florida, respectively.
+  He now contributes to research working under Keivan Sabet on the Survivors Project.
+avatar: media/authors/ethen-santana.JPEG
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/ethensantana251/
+    label: LinkedIn profile
+interests:
+  - Extended Reality
+  - XR User Experience
+  - Human-Computer Interaction
+  - Ethical Concerns of Technology
+user_groups:
+  - Undergraduate Students
+weight: 1
