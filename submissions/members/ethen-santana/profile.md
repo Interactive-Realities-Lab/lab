@@ -21,7 +21,7 @@ Ethen Santana is a Computer Science Undergraduate Student & Assistant Researcher
 
 ## Links
 
-- [Website](https://github.com/JazzCat4)
+- [GitHub](https://github.com/JazzCat4)
 - [LinkedIn profile](https://www.linkedin.com/in/ethensantana251/)
 
 ## Photo
