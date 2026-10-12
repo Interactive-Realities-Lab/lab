@@ -6,7 +6,6 @@ name:
   given: Ethen
   family: Santana
 role: Computer Science Undergraduate Student & Assistant Researcher
-website: https://github.com/JazzCat4
 bio: >-
   Ethen Santana is a Computer Science Undergraduate Student & Assistant
   Researcher at Iowa State University. He has previous research experience
@@ -18,6 +17,9 @@ affiliations:
   - name: Iowa State University
     url: https://www.iastate.edu/
 links:
+  - icon: brands/github
+    url: https://github.com/JazzCat4
+    label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ethensantana251/
     label: LinkedIn profile
