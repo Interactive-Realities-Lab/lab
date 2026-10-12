@@ -2,11 +2,11 @@
 
 Name: Tanim Ahmed
 
-Student level: PhD student
+Student level: PhD student in Computer Science
 
 University: Iowa State University
 
-Role or degree program: Ph.D. Student in Computer Science
+Role or degree program: Graduate Research Assistant
 
 ## Biography
 
@@ -20,15 +20,11 @@ Tanim Ahmed is a Ph.D. student in Computer Science at Iowa State University, con
 - Adaptive 3D User Interfaces (3D UIs)
 - Human Factors and Cognitive Performance in XR
 
-[3–5 research interests]
-
 ## Current IRLab project(s)
 
 - FirstModulAR
 - Evaluating AR interfaces in dual-task paradigm
 - Adaptive Interfaces
-
-[Project name and your contribution, or "Not yet assigned"]
 
 ## Links
 
@@ -37,8 +33,6 @@ Tanim Ahmed is a Ph.D. student in Computer Science at Iowa State University, con
 - [GitHub](https://github.com/ahmedtanim97)
 - [ORCID](https://orcid.org/0000-0003-2661-8987)
 
-[Optional public links; remove if unused]
-
 ## Photo
 
-Photo filename: [Uploaded filename, such as portrait.jpg]
+Photo filename: Tanim.jpg
