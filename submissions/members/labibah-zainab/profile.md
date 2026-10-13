@@ -6,23 +6,27 @@ Student level: Undergraduate student
 
 University: Iowa State University
 
-Role or degree program: [Your role or degree program]
+Role or degree program: Computer Science Undergraduate Student & IRLab Member
 
 ## Biography
 
-[50–80 words in English]
+Labibah Zainab is an undergraduate Computer Science student at Iowa State University, pursuing a minor in Mathematics. Her interests lie at the intersection of extended reality, human-computer interaction, psychology, and healthcare. As a member of the Interactive Realities Lab, she is exploring immersive technologies and developing her skills in virtual reality development. She hopes to contribute to research that uses technology to create meaningful, accessible, and human-centered experiences.
 
 ## Research interests
 
-[3–5 research interests]
+- Extended Reality (XR)
+- Human-Computer Interaction
+- Virtual Reality in Healthcare
+- XR User Experience
+- Human-Centered Technology
 
 ## Current IRLab project(s)
 
-[Project name and your contribution, or "Not yet assigned"]
+Labibah is currently learning Unity and exploring the fundamentals of virtual reality development. She is building practical skills in designing and developing immersive experiences while preparing to contribute to future research projects within the Interactive Realities Lab.
 
 ## Links
 
-[Optional public links; remove if unused]
+- [GitHub](https://github.com/LZainab-0407)
 
 ## Photo
 
