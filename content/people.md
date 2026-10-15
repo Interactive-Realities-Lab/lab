@@ -26,6 +26,7 @@ sections:
         - name: Undergraduate Students
           members:
             - ethen-santana
+            - labibah-zainab
     design:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
