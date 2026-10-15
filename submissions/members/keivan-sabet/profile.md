@@ -6,7 +6,7 @@ Student level: PhD student
 
 University: Iowa State University
 
-Role or degree program: [Your role or degree program]
+Role or degree program: PhD Student in Computer Science
 
 ## Biography
 
@@ -14,10 +14,10 @@ Keivan is a PhD student in the Computer Science Department at Iowa State Univers
 
 ## Research interests
 
-Computer Architecture
-Robotics
-Bioengineering
-Biomedical Engineering
+- Computer Architecture
+- Robotics
+- Bioengineering
+- Biomedical Engineering
 
 
 ## Current IRLab project(s)
@@ -29,4 +29,4 @@ SURVIVRS
 
 ## Photo
 
-Photo filename: [Uploaded filename, such as portrait.jpg]
+Photo filename: Photo.jpg
