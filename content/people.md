@@ -21,6 +21,7 @@ sections:
             - rafid-mostafiz
             - tanim-ahmed
             - keivan-sabet
+            - jai-sai-naga-venkat-guttikonda
         - name: Master's Students
           members: []
         - name: Undergraduate Students
