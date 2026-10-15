@@ -12,10 +12,7 @@ avatar: media/authors/keivan-sabet.jpg
 affiliations:
   - name: Iowa State University
     url: https://www.iastate.edu/
-links:
-  - icon: brands/github
-    url: https://github.com/LZainab-0407
-    label: GitHub
+links: []
 interests:
   - Computer Architecture
   - Robotics
