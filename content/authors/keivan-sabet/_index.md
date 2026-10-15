@@ -16,9 +16,3 @@ Keivan is a PhD student in the Computer Science Department at Iowa State Univers
 ## Current Work
 
 SURVIVRS
-
-## Links
-
-## Photo
-
-Photo filename: Photo.jpg
