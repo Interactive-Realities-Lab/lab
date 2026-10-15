@@ -1,0 +1,25 @@
+schema: hugoblox/author/v1
+slug: keivan-sabet
+is_owner: false
+name:
+  display: Keivan Sabet
+  given: Keivan
+  family: Sabet
+role: "PhD Student in Computer Science"
+bio: >-
+  Keivan is a PhD student in the Computer Science Department at Iowa State University. He works in the IRLab, where he contributes to the SURVIVRS project, a virtual reality telemedicine system that enables surgeons to be virtually present in operating rooms from remote locations, providing real time expertise and assistance to onsite surgical teams.
+avatar: media/authors/keivan-sabet.jpg
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: brands/github
+    url: https://github.com/LZainab-0407
+    label: GitHub
+interests:
+  - Computer Architecture
+  - Robotics
+  - Bioengineering
+  - Biomedical Engineering
+user_groups:
+  - PhD Students
