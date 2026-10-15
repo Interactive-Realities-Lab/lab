@@ -1,0 +1,26 @@
+schema: hugoblox/author/v1
+slug: labibah-zainab
+is_owner: false
+name:
+  display: Labibah Zainab
+  given: Labibah
+  family: Zainab
+role: "Computer Science Undergraduate Student & IRLab Member"
+bio: >-
+  Labibah Zainab is an undergraduate Computer Science student at Iowa State University, pursuing a minor in Mathematics. Her interests lie at the intersection of extended reality, human-computer interaction, psychology, and healthcare. As a member of the Interactive Realities Lab, she is exploring immersive technologies and developing her skills in virtual reality development. She hopes to contribute to research that uses technology to create meaningful, accessible, and human-centered experiences.
+avatar: media/authors/labibah-zainab.jpg
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: brands/github
+    url: https://github.com/LZainab-0407
+    label: GitHub
+interests:
+  - Extended Reality (XR)
+  - Human-Computer Interaction
+  - Virtual Reality in Healthcare
+  - XR User Experience
+  - Human-Centered Technology
+user_groups:
+  - Undergraduate Students
