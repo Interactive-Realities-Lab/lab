@@ -30,4 +30,4 @@ Labibah is currently learning Unity and exploring the fundamentals of virtual re
 
 ## Photo
 
-Photo filename: labibah-zainab.jpg
+Photo filename: [Please upload a JPG or PNG photo; the previous file contained no image data]
