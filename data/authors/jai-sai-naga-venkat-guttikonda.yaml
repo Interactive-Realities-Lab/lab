@@ -1,0 +1,27 @@
+schema: hugoblox/author/v1
+slug: jai-sai-naga-venkat-guttikonda
+is_owner: false
+name:
+  display: Jai Sai Naga Venkat Guttikonda
+  given: Jai Sai Naga Venkat
+  family: Guttikonda
+role: "PhD Student in Computer Science"
+bio: >-
+  Jai is a PhD student in Computer Science at Iowa State University and a member of the Interactive Realities Lab (IRLab), working with Dr. Regis Kopper. His research interests include virtual reality, human-computer interaction, and immersive interaction techniques. His current research focuses on developing and evaluating interaction techniques for remote annotation and precision-based tasks in virtual reality.
+avatar: media/authors/jai-sai-naga-venkat-guttikonda.jpg
+affiliations:
+  - name: Iowa State University
+    url: https://www.iastate.edu/
+links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/jai-guttikonda-160665235
+    label: LinkedIn
+  - icon: hero/academic-cap
+    url: https://www.cs.iastate.edu/people/jai-sai-naga-venkat-guttikonda
+    label: ISU Profile
+interests:
+  - Virtual Reality (VR) and Extended Reality (XR)
+  - 3D User Interfaces and Interaction Techniques
+  - Artificial Intelligence and Machine Learning
+user_groups:
+  - PhD Students
