@@ -6,24 +6,28 @@ Student level: PhD student
 
 University: Iowa State University
 
-Role or degree program: [Your role or degree program]
+Role or degree program: Computer Science
 
 ## Biography
 
-[50–80 words in English]
+Jai is a PhD student in Computer Science at Iowa State University and a member of the Interactive Realities Lab (IRLab), working with Dr. Regis Kopper. His research interests include virtual reality, human-computer interaction, and immersive interaction techniques. His current research focuses on developing and evaluating interaction techniques for remote annotation and precision-based tasks in virtual reality.
 
 ## Research interests
 
-[3–5 research interests]
+Virtual Reality (VR) and Extended Reality (XR), 3D User Interfaces and Interaction Techniques, Artificial Intelligence and Machine Learning
 
 ## Current IRLab project(s)
 
-[Project name and your contribution, or "Not yet assigned"]
+MMW: Remote Annotation
+
+Exploring virtual reality interaction techniques to support precise and intuitive remote annotation.
 
 ## Links
 
-[Optional public links; remove if unused]
+LinkedIn (https://www.linkedin.com/in/jai-guttikonda-160665235)
+
+ISU Profile (https://www.cs.iastate.edu/people/jai-sai-naga-venkat-guttikonda)
 
 ## Photo
 
-Photo filename: [Uploaded filename, such as portrait.jpg]
+Photo filename: [jaig_portrait.jpg]
