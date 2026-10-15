@@ -20,6 +20,7 @@ sections:
             - shakrin-jahan-mozumder
             - rafid-mostafiz
             - tanim-ahmed
+            - keivan-sabet
         - name: Master's Students
           members: []
         - name: Undergraduate Students
