@@ -1,9 +1,9 @@
 ---
 title: Projects
-summary: IRLab projects develop and evaluate extended-reality interaction techniques and immersive training for public safety and healthcare.
+summary: IRLab projects explore extended-reality interaction, public safety, healthcare, security, and scientific visualization.
 seo:
   title: "Projects | Interactive Realities Laboratory"
 type: projects
 ---
 
-IRLab combines foundational work on interaction with applied XR systems for real-world settings. Current projects explore modular augmented-reality interfaces for first responders, virtual-reality de-escalation training, and immersive technologies for healthcare.
+IRLab combines research on interaction with applied XR systems. Our projects explore public safety, healthcare, authentication, remote annotation, object manipulation, physical tasks, scientific visualization, and movement in virtual environments.

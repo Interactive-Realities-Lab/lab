@@ -1,0 +1,20 @@
+{{- if and .File (in (slice "authors" "publications") .Section) -}}
+  {{- $slug := path.Base (path.Clean .File.Dir) -}}
+  {{- $field := cond (eq .Section "authors") "related_people" "related_publications" -}}
+  {{- $projects := slice -}}
+  {{- range (where site.RegularPages "Section" "projects").ByWeight -}}
+    {{- if in (index .Params $field | default slice) $slug -}}
+      {{- $projects = $projects | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $projects -}}
+<section aria-labelledby="related-projects-heading" class="mx-auto w-full max-w-5xl px-6 pb-12 md:px-12">
+  <h2 id="related-projects-heading" class="text-2xl font-bold">Related projects</h2>
+  <ul class="mt-4 space-y-3">
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}" class="underline underline-offset-4">{{ .Title }}</a></li>
+    {{- end }}
+  </ul>
+</section>
+  {{- end -}}
+{{- end -}}
