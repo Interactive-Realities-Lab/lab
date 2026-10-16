@@ -145,10 +145,6 @@
   margin-top: 2rem;
 }
 
-/* Give publication detail pages more room for long titles and metadata. */
-html:has(head link[rel="canonical"][href*="/publications/"]) article > main.max-w-6xl {
-  max-width: 80rem;
-}
 
 /* Make publication actions feel like clear, easy-to-find controls. */
 .hb-attachment-link-large {
@@ -210,9 +206,6 @@ html:has(head link[rel="canonical"][href*="/publications/"]) article > main.max-
   box-shadow: 0 5px 12px rgb(30 58 138 / 28%);
 }
 
-html:has(head link[rel="canonical"][href*="/publications/"]) article > main > .mt-4.mb-16 > .mt-3 {
-  margin-top: 3.5rem !important;
-}
 
 .hb-attachment-link-large:focus-visible {
   outline: 3px solid #1d4ed8;
@@ -479,4 +472,312 @@ html:has(head link[rel="canonical"][href*="/publications/"]) article > main > .m
   #section-sage-team .people-social-links a {
     transition: none;
   }
+}
+
+/* Publication details: keep the theme's content and controls, but give each
+   part of the record a consistent reading width and clear hierarchy. */
+.publication-detail .page-body > .mx-auto.flex.max-w-screen-xl,
+.publication-detail #page-content > section[aria-labelledby="related-projects-heading"] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 78rem;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+.publication-detail .page-body > .mx-auto.flex.max-w-screen-xl > article {
+  flex: 1 1 100%;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.publication-detail article > main {
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: none;
+  padding: clamp(1.5rem, 3vw, 3rem) 0 1.5rem;
+}
+
+.publication-detail .page-body article > main > h1 {
+  max-width: none;
+  margin: 0;
+  color: #18213b;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.16;
+  text-wrap: wrap;
+}
+
+.publication-detail article > main > .mt-4.mb-16 {
+  max-width: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.publication-detail article > main > .mt-4.mb-16 > .text-gray-500 {
+  color: #536079;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.publication-detail article > main > .mt-4.mb-16 > .mt-3 {
+  margin-top: 1.5rem !important;
+}
+
+.publication-detail article > main > .mt-4.mb-16 > .mt-3 > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.publication-detail .hb-attachment-link.hb-attachment-link-large {
+  min-height: 2.9rem;
+  margin: 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid #d7dce4;
+  border-radius: 0.35rem;
+  background: #fff;
+  color: #303b50;
+  box-shadow: none;
+  font-size: 0.95rem !important;
+  line-height: 1.3;
+}
+
+.publication-detail .hb-attachment-link.hb-attachment-link-large:hover,
+.publication-detail .hb-attachment-link.hb-attachment-link-large:focus-visible {
+  transform: none;
+  border-color: #8994a5;
+  background: #f7f8fa;
+  color: #18213b;
+  box-shadow: none;
+}
+
+.publication-detail article > main > .max-w-prose.grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.publication-detail article > main > .max-w-prose.grid > div {
+  min-width: 0;
+  padding: 0;
+}
+
+.publication-detail article > main > .max-w-prose.grid > div:nth-child(odd) {
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  color: #536079;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.publication-detail article > main > .max-w-prose.grid > div:nth-child(even) {
+  padding: 0;
+  color: #303b50;
+  font-size: 1.04rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.publication-detail article > main > .max-w-prose.grid a,
+.publication-detail article > main > .prose a {
+  color: #303b50;
+  text-underline-offset: 0.2em;
+}
+
+.publication-detail article > main > .prose,
+.publication-detail article > main > .container.prose {
+  max-width: none;
+}
+
+.publication-detail article > main > .prose:not(.container) {
+  margin-top: 1.5rem;
+  color: #303b50;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* Most publication bodies only contain the hidden search filter. */
+.publication-detail article > main > .prose:not(.container):has(> [data-pagefind-filter]:only-child) {
+  display: none;
+}
+.publication-detail article > main > time {
+  max-width: none;
+  margin: 1.5rem 0 0;
+  color: #657188;
+  text-align: left;
+}
+
+.publication-detail article > main > .container.prose .no-prose hr {
+  display: none;
+}
+
+.publication-detail article > main > .container.prose {
+  margin: 1.5rem 0 0;
+}
+
+.publication-detail article > main > .container.prose > .max-w-prose {
+  max-width: none;
+}
+
+.publication-detail article > main > .container.prose section.flex {
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+}
+
+.publication-detail article > main > .container.prose:not(:has(a[href*="/tags/"])) section.flex {
+  padding-top: 0;
+}
+
+.publication-detail article > main > .container.prose .flex.justify-center:has(> a[href*="/tags/"]) {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.publication-detail article > main > .container.prose .flex.justify-center > a[href*="/tags/"] {
+  margin: 0;
+  background: #f2f4f6;
+  color: #36445d;
+}
+
+.publication-detail article > main > .container.prose .flex.justify-center > a[href*="/tags/"]:hover {
+  background: #e8ebef;
+  color: #18213b;
+}
+
+.publication-detail article > main > .container.prose section.flex > a {
+  background: #f2f4f6;
+  color: #536079;
+}
+
+.publication-detail article > main > .container.prose section.flex > a:hover {
+  background: #e8ebef;
+  color: #18213b;
+}
+
+.publication-detail article > main > .container.prose .no-prose a.text-right {
+  text-align: left;
+}
+
+.publication-detail article > main > .container.prose .pt-12.pb-4 {
+  gap: 1rem;
+  padding: 1.5rem 0 0;
+}
+
+.publication-detail article > main > .container.prose .pt-12.pb-4 > img {
+  flex: none;
+  margin-right: 0;
+}
+
+.publication-detail article > main > .container.prose .pt-1.no-prose {
+  margin-top: 1.5rem;
+}
+
+.publication-detail article > main > .container.prose .pt-1.no-prose > .flex > div {
+  min-width: 0;
+}
+
+.publication-detail article > main > .container.prose .pt-1.no-prose a.group {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .publication-detail article > main > .container.prose .pt-1.no-prose > .flex > div {
+    flex: 0 1 44%;
+    max-width: 44%;
+  }
+}
+
+.publication-detail #page-content > section[aria-labelledby="related-projects-heading"] {
+  padding-bottom: 1.5rem;
+}
+
+.publication-detail #page-content > section[aria-labelledby="related-projects-heading"] > div {
+  padding-top: 0;
+}
+
+@media (max-width: 639px) {
+  .publication-detail .page-body > .mx-auto.flex.max-w-screen-xl,
+  .publication-detail #page-content > section[aria-labelledby="related-projects-heading"] {
+    padding-inline: 1.25rem;
+  }
+  .publication-detail .page-body article > main > h1 {
+    font-size: clamp(1.8rem, 8vw, 2.25rem);
+  }
+
+  .publication-detail article > main > .container.prose .pt-12.pb-4 {
+    align-items: flex-start;
+  }
+
+  .publication-detail article > main > .container.prose .pt-12.pb-4 > img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* One 72rem content column (plus responsive gutters) for every page type. */
+.page-body > .mx-auto.flex.max-w-screen-xl,
+.page-body > .mx-auto.w-full.max-w-6xl,
+.page-body > .max-w-prose.mx-auto.flex.justify-center,
+.page-body > .flex.flex-col.items-center,
+.page-body > section[aria-labelledby="related-projects-heading"],
+#section-home-overview > .mx-auto.max-w-7xl,
+#section-sage-team .mx-auto.max-w-6xl {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 78rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* Sidebars must not take up flex space after the TOC is disabled. */
+.page-body .hb-toc,
+.page-body .hb-sidebar-container {
+  display: none;
+}
+
+.page-body > .mx-auto.flex.max-w-screen-xl > article {
+  flex: 1 1 100%;
+  min-width: 0;
+  padding-right: 0;
+}
+
+.page-body > .mx-auto.flex.max-w-screen-xl > article > :first-child,
+.page-body > .mx-auto.w-full.max-w-6xl > header,
+.page-body > .max-w-prose.mx-auto.flex.justify-center > article,
+.page-body > .flex.flex-col.items-center > .container.max-w-3xl {
+  width: 100%;
+  max-width: none;
+}
+
+.page-body > .mx-auto.flex.max-w-screen-xl > article > :first-child,
+.page-body > .flex.flex-col.items-center > .container.max-w-3xl {
+  padding-inline: 0;
+}
+
+.page-body > .max-w-prose.mx-auto.flex.justify-center {
+  justify-content: flex-start;
+}
+
+.page-body > section[aria-labelledby="related-projects-heading"] {
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* The landing blocks use their own narrower wrappers. */
+#section-sage-team .mx-auto.max-w-6xl > header,
+#section-home-overview > .mx-auto.max-w-7xl > section > .max-w-4xl {
+  max-width: none;
 }

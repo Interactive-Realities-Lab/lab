@@ -11,27 +11,27 @@
     <button class="project-filter border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-800" data-filter="healthcare-xr" aria-pressed="false">XR for Healthcare</button> -->
   </nav>
 
-  <div class="mt-8 grid gap-7 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
+  <div class="mt-8 grid auto-rows-fr gap-7 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
     {{ range .RegularPages.ByWeight }}
       {{- $umbrella := .Params.umbrella | default "public-safety-xr" -}}
       {{- $status := .Params.status | default "active" -}}
       {{- $marker := "XR" -}}
       {{- $image := resources.Get .Params.project_image -}}
-      <article class="project-card overflow-hidden border border-slate-200 bg-white" data-umbrella="{{ $umbrella }}" data-status="{{ $status }}">
-        <a href="{{ .RelPermalink }}" class="block" aria-label="{{ .Title }}">
+      <article class="project-card flex h-full flex-col overflow-hidden border border-slate-200 bg-white [&[hidden]]:hidden" data-umbrella="{{ $umbrella }}" data-status="{{ $status }}">
+        <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100" aria-label="{{ .Title }}">
           {{ if $image }}
-            {{- $thumb := $image.Resize "900x webp q82" -}}
-            <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-auto w-full">
+            {{- $thumb := $image.Fill "960x600 Center webp q82" -}}
+            <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-full w-full object-cover">
           {{ else }}
-            <div class="flex h-44 items-center justify-center bg-slate-100 text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">{{ $marker }}</div>
+            <div class="flex h-full w-full items-center justify-center text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">{{ $marker }}</div>
           {{ end }}
         </a>
-        <div class="p-6">
+        <div class="flex flex-1 flex-col p-6">
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ .Params.umbrella_label }}</p>
           {{ if eq $status "revive" }}<p class="mt-2 inline-block border border-slate-300 px-2 py-1 text-xs font-medium text-slate-700">Available to revive</p>{{ end }}
           <h2 class="mt-2 text-xl font-semibold leading-snug text-slate-950"><a href="{{ .RelPermalink }}" class="hover:underline">{{ .Title }}</a></h2>
-          <p class="mt-3 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
-          <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+          <p class="mt-3 line-clamp-2 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
+          <div class="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5">
             <a href="{{ .RelPermalink }}" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details</a>
             {{ with .Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project website</a>{{ end }}
           </div>
