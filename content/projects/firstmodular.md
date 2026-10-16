@@ -9,16 +9,16 @@ umbrella: public-safety-xr
 umbrella_label: XR for Public Safety
 summary: A modular Unity framework for prototyping augmented-reality interfaces for first responders.
 related_people:
-- regis-kopper
 - tanim-ahmed
 - jie-ding
+- regis-kopper
 project_image: media/projects/firstmodular/figure-2.png
 show_project_hero: false
 image_alt: FirstModulAR emergency medical services prototype.
 external_url: https://fmar.nextgeninteractions.com/
 ---
 
-**Members:** [Regis Kopper]({{< relref "/authors/regis-kopper" >}}) · [Tanim Ahmed]({{< relref "/authors/tanim-ahmed" >}}) · [Erin Argo](https://www.linkedin.com/in/erin-argo-9b4052281) · [Jie Ding]({{< relref "/authors/jie-ding" >}})
+**Members:** [Tanim Ahmed]({{< relref "/authors/tanim-ahmed" >}}) · Erin Argo · [Jie Ding]({{< relref "/authors/jie-ding" >}}) · Jason Jerald · Rich Bennett · Connor Shipway · Jeronimo Grandi · [Regis Kopper]({{< relref "/authors/regis-kopper" >}})
 
 FirstModulAR is an open-source Unity platform for exploring augmented reality interfaces for first responders. It brings reusable interface capabilities into a common framework, helping researchers and developers build prototypes for different public-safety tasks. Example applications cover fire search and rescue, emergency medical services, and law-enforcement traffic stops. These scenarios show how shared interface elements can present information appropriate to each task, from navigation cues to patient or vehicle information. The project also provides a setting for studying how people interact with AR under demanding conditions, with the broader aim of informing interfaces that fit responders' needs.
 
