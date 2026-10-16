@@ -26,6 +26,7 @@
     {{ $cover := partial "functions/get_cover_image.html" . }}
     <main id="page-content" tabindex="-1" class="page-body {{if and (ne .Type "landing") (not $cover)}} my-10{{end}}">
       {{ block "main" . }}{{ end }}
+      {{ partial "project_relations.html" . }}
     </main>
     <div class="page-footer">
       {{ partial "site_footer" . }}
