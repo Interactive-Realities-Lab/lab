@@ -27,8 +27,8 @@ Evaluation of Crawling-Based Locomotion Techniques in Virtual Reality
 
 ## Links
 [
-[Optional public links; remove if unused]](https://www.linkedin.com/in/jessica-anioha-48b4a5259/)
+[LinkedIn]](https://www.linkedin.com/in/jessica-anioha-48b4a5259/)
 
 ## Photo
 
-Photo filename: [Uploaded filename, such as portrait.jpg]
+Photo filename: IMG_9102.jpeg
