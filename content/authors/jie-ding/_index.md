@@ -14,7 +14,7 @@ Jie is a PhD student in Human-Computer Interaction at Iowa State University. Her
 
 ## Current Work
 
-- State-Aware XR for Physical Manipulation
+- [Physical Object Manipulation]({{< relref "/projects/xr-physical-interaction" >}})
 - FirstModulAR
 
 [LinkedIn](https://www.linkedin.com/in/jie-ding-hci/)

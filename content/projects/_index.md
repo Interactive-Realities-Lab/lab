@@ -6,4 +6,4 @@ seo:
 type: projects
 ---
 
-IRLab combines research on interaction with applied XR systems. Our projects explore public safety, healthcare, authentication, remote annotation, object manipulation, physical tasks, scientific visualization, and movement in virtual environments.
+IRLab combines research on interaction with applied XR systems. Our projects explore public safety, healthcare, authentication, remote annotation, distant object interaction, physical object manipulation, AR navigation, scientific visualization, and movement in virtual environments.

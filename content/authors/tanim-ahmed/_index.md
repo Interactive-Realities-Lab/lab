@@ -16,7 +16,8 @@ Tanim Ahmed is a Ph.D. student in Computer Science at Iowa State University, con
 
 ## Current Work
 
-- FirstModulAR
+- [FirstModulAR]({{< relref "/projects/firstmodular" >}})
+- [AR Navigation and Wayfinding]({{< relref "/projects/ar-navigation-wayfinding" >}})
 - Evaluating AR interfaces in dual-task paradigm
 - Adaptive Interfaces
 

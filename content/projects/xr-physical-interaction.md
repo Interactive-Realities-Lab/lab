@@ -1,5 +1,5 @@
 ---
-title: XR Guidance for Physical Interaction
+title: Physical Object Manipulation
 type: page
 layout: compact
 weight: 60
@@ -7,14 +7,14 @@ status: active
 featured: false
 umbrella: xr-interaction
 umbrella_label: XR Interaction
-summary: Extended-reality guidance and feedback for physical tasks.
+summary: Augmented reality, sensing, and feedback for interaction with physical objects.
 related_people:
-- regis-kopper
 - jie-ding
+- regis-kopper
 ---
 
-**Members:** [Regis Kopper]({{< relref "/authors/regis-kopper" >}}) · [Jie Ding]({{< relref "/authors/jie-ding" >}})
+**Members:** [Jie Ding]({{< relref "/authors/jie-ding" >}}) · [Regis Kopper]({{< relref "/authors/regis-kopper" >}})
 
-Physical tasks require people to connect instructions with the objects and actions in front of them. This research explores how extended reality can support that connection through guidance and feedback. It examines how information relates to a user’s actions and the state of a task, with the aim of helping people understand and carry out physical activities while keeping their attention on the work.
+Physical Object Manipulation explores how augmented reality can support people as they interact with real objects. The research brings together sensing, 3D-printed prototypes, and visual feedback to study how interfaces connect physical actions with information about an ongoing task. It focuses on usability, precision, and the relationship between what people do and what an interface communicates.
 
 This research contributes to [FirstModulAR]({{< relref "/projects/firstmodular" >}}), a platform for exploring AR interfaces for first responders.

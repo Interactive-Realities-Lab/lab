@@ -22,8 +22,10 @@ sections:
             - tanim-ahmed
             - keivan-sabet
             - jai-sai-naga-venkat-guttikonda
+            - fahmida-imrose
         - name: Master's Students
-          members: []
+          members:
+            - jessica-anioha
         - name: Undergraduate Students
           members:
             - ethen-santana

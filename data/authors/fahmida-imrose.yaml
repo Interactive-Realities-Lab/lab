@@ -1,0 +1,27 @@
+schema: hugoblox/author/v1
+slug: fahmida-imrose
+is_owner: false
+name:
+  display: Fahmida Imrose
+  given: Fahmida
+  family: Imrose
+role: PhD Student in Computer Science
+bio: Fahmida Imrose is a PhD student in Computer Science at Iowa State University. Her work in IRLab explores immersive
+  molecular visualization and three-dimensional user interfaces. She is interested in how people examine and interact
+  with complex molecular structures in virtual environments. Her broader research interests include computer vision,
+  bioinformatics, and deep learning.
+affiliations:
+- name: Iowa State University
+  url: https://www.iastate.edu/
+links:
+- icon: hero/academic-cap
+  url: https://www.cs.iastate.edu/people/fahmida-imrose
+  label: Department Profile
+interests:
+- Immersive Molecular Visualization
+- 3D User Interfaces
+- Computer Vision
+- Bioinformatics
+- Deep Learning
+user_groups:
+- PhD Students
