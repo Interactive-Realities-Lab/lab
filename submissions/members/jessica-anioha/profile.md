@@ -6,24 +6,29 @@ Student level: Master's student
 
 University: Iowa State University
 
-Role or degree program: [Your role or degree program]
+Role or degree program: M.S. Student in Human–Computer Interaction · Iowa State University
 
 ## Biography
 
-[50–80 words in English]
+Jessica Anioha is a master's student in Human–Computer Interaction at Iowa State University. Her current research focuses on developing and evaluating crawling-based locomotion techniques in virtual reality, investigating how different movement approaches influence navigation 
+
 
 ## Research interests
 
-[3–5 research interests]
+Virtual Reality
+
+Human–Computer Interaction
+
+Spatial Navigation and User Experience
 
 ## Current IRLab project(s)
 
-[Project name and your contribution, or "Not yet assigned"]
+Evaluation of Crawling-Based Locomotion Techniques in Virtual Reality
 
 ## Links
-
-[Optional public links; remove if unused]
+[
+[LinkedIn]](https://www.linkedin.com/in/jessica-anioha-48b4a5259/)
 
 ## Photo
 
-Photo filename: [Uploaded filename, such as portrait.jpg]
+Photo filename: IMG_9102.jpeg
