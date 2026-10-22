@@ -18,7 +18,7 @@
       {{- $marker := "XR" -}}
       {{- $image := resources.Get .Params.project_image -}}
       <article class="project-card flex h-full flex-col overflow-hidden border border-slate-200 bg-white [&[hidden]]:hidden" data-umbrella="{{ $umbrella }}" data-status="{{ $status }}">
-        <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100" aria-label="{{ .Title }}">
+        <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100{{ if .Params.project_image_hover }} project-image-hover{{ end }}" aria-label="{{ .Title }}">
           {{ if $image }}
             {{- $thumb := $image.Fill "960x600 Center webp q82" -}}
             <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-full w-full object-cover">

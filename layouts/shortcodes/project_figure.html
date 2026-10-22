@@ -3,7 +3,7 @@
   {{- errorf "Missing project image %q on %s" (.Get "src") .Page.RelPermalink -}}
 {{- else -}}
 <figure class="project-figure" style="margin:2rem auto;max-width:{{ $image.Width }}px">
-  <picture>
+  <picture{{ if eq (.Get "hover") "true" }} class="project-image-hover"{{ end }}>
     {{- with .Get "still" -}}
       {{- with resources.Get . -}}
     <source media="(prefers-reduced-motion: reduce)" srcset="{{ .RelPermalink }}">

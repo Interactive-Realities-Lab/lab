@@ -474,6 +474,22 @@
   }
 }
 
+.project-image-hover {
+  display: block;
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .project-image-hover > img {
+    transition: transform 240ms ease;
+  }
+
+  .project-image-hover:hover > img,
+  a.project-image-hover:focus-visible > img {
+    transform: scale(1.025);
+  }
+}
+
 /* Publication details: keep the theme's content and controls, but give each
    part of the record a consistent reading width and clear hierarchy. */
 .publication-detail .page-body > .mx-auto.flex.max-w-screen-xl,
