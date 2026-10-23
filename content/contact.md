@@ -12,6 +12,6 @@ Interactive Realities Laboratory (IRLab)\
 [Iowa State University](https://www.iastate.edu/)\
 Durham Center, Room 073\
 613 Morrill Road\
-Ames, Iowa 50011-2100, USA\
+Ames, Iowa 50011-2100, USA
 
 {{< google_map query="Durham Center, 613 Morrill Road, Ames, IA 50011" >}}
