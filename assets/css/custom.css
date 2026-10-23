@@ -380,7 +380,7 @@
 #section-sage-team .people-card-content {
   display: flex;
   flex: 1;
-  min-height: 10.75rem;
+  min-height: 8.5rem;
   flex-direction: column;
   align-items: flex-start;
   padding: 0.65rem 1rem 0.8rem;
@@ -796,4 +796,123 @@
 #section-sage-team .mx-auto.max-w-6xl > header,
 #section-home-overview > .mx-auto.max-w-7xl > section > .max-w-4xl {
   max-width: none;
+}
+
+/* Directory pages share the homepage's compact spacing and light borders. */
+#section-sage-team > .mx-auto > header {
+  margin-bottom: 2rem;
+}
+
+#section-sage-team .people-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+#section-sage-team .people-card {
+  max-width: none;
+  border-radius: 0.25rem;
+  box-shadow: none;
+}
+
+#section-sage-team .people-group:first-child .people-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#section-sage-team .people-group:first-child .people-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  border: 0;
+}
+
+#section-sage-team .people-group:first-child .people-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+#section-sage-team .people-group:first-child .people-avatar {
+  flex: 0 0 7rem;
+  width: 7rem;
+  aspect-ratio: 1;
+}
+
+#section-sage-team .people-group:first-child .people-card-content {
+  min-height: 0;
+  padding: 0;
+}
+
+#section-sage-team .people-group:first-child .people-role {
+  display: block;
+  min-height: 0;
+}
+
+.publication-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e2e6ed;
+}
+
+.publication-row:first-child {
+  padding-top: 0;
+}
+
+.publication-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.publication-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.publication-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.publication-authors,
+.publication-venue {
+  margin-top: 0.35rem;
+  color: #536079;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-top: 0.65rem;
+  font-size: 0.88rem;
+}
+
+.publication-award {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  #section-sage-team .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  #section-sage-team .people-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .publication-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
