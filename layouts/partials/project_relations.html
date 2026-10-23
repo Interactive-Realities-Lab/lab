@@ -10,7 +10,7 @@
   {{- with $projects -}}
 <section aria-labelledby="related-projects-heading" class="mx-auto w-full pb-12 {{ if eq $.Section "authors" }}max-w-6xl{{ else }}max-w-5xl px-6 md:px-12{{ end }}">
   <div class="pt-8">
-    <h1 id="related-projects-heading" class="text-4xl font-extrabold leading-none text-slate-950 lg:text-6xl">Related projects</h1>
+    <h2 id="related-projects-heading" class="text-2xl font-semibold leading-snug text-slate-950">Related projects</h2>
     <ul class="mt-5 grid gap-4 sm:grid-cols-2">
       {{- range . }}
       <li>
