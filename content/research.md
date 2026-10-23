@@ -17,4 +17,4 @@ research_areas:
     description: We investigate immersive tools for remote medical guidance, collaboration, and understanding scientific information.
 ---
 
-We study how people interact with extended reality (XR) and how immersive systems can support real-world work, training, and collaboration. Our research connects the design and evaluation of 3D interfaces with applications in public safety, healthcare, and scientific visualization.
+We design and evaluate extended reality (XR) interfaces for interaction, collaboration, and learning. Our current projects connect these methods with applications in public safety, healthcare, and scientific visualization.

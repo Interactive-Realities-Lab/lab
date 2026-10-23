@@ -9,7 +9,7 @@ sections:
   - block: sage-team
     content:
       title: People
-      text: The Interactive Realities Laboratory is directed by Dr. Regis Kopper.
+      text: Researchers at the Interactive Realities Laboratory, Iowa State University.
       groups:
         - name: Lab Director
           members:
