@@ -6,9 +6,10 @@
 {{- $profile := partial "functions/get_author_profile" (dict "slug" "regis-kopper") -}}
 {{- $author_data := index hugo.Data.authors "regis-kopper" | default dict -}}
 {{- $avatar := $profile.avatar -}}
+{{- $card_titles := dict "firstmodular" "FirstModulAR" "xr-continuous-authentication" "Continuous Authentication in XR" "survivrs" "SURVIVRS" -}}
 
 <div class="mx-auto max-w-7xl px-6 pb-20 pt-8 md:px-12 lg:px-16">
-  <section class="border-b border-slate-200 pb-14 pt-6 sm:pb-20 sm:pt-10" aria-labelledby="home-title">
+  <section class="border-b border-slate-200 pb-10 pt-4 sm:pb-14 sm:pt-6" aria-labelledby="home-title">
     <div class="flex items-center gap-4 sm:gap-9">
       {{ with $logo }}
         <img src="{{ .RelPermalink }}" alt="" width="856" height="1180" class="h-16 w-auto shrink-0 sm:h-28" loading="eager">
@@ -16,14 +17,13 @@
       <div class="min-w-0">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm">Iowa State University · Department of Computer Science</p>
         <h1 id="home-title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">Interactive Realities Laboratory</h1>
-        <p class="mt-3 text-base font-medium text-slate-700 sm:text-xl">Designing effective interactions for extended reality.</p>
       </div>
     </div>
-    <p class="mt-9 max-w-4xl text-lg leading-relaxed text-slate-600 sm:mt-12 sm:text-xl sm:leading-8">We study how people interact with immersive technologies and how extended reality can support real-world work, training, and decision-making.</p>
+    <p class="mt-6 max-w-4xl text-lg leading-relaxed text-slate-600 sm:text-xl sm:leading-8">{{ site.Home.Params.summary }}</p>
   </section>
 
-  <section class="border-b border-slate-200 py-16 sm:py-20" aria-labelledby="home-projects-title">
-    <div class="mb-9 flex flex-wrap items-end justify-between gap-5 sm:mb-11">
+  <section class="border-b border-slate-200 py-10 sm:py-14" aria-labelledby="home-projects-title">
+    <div class="mb-7 flex flex-wrap items-end justify-between gap-4 sm:mb-8">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Research in action</p>
         <h2 id="home-projects-title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Current projects</h2>
@@ -34,21 +34,24 @@
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
       {{ range $project_items }}
         {{- $project := . -}}
+        {{- $card_title := index $card_titles .File.BaseFileName | default .Title -}}
+        {{- $diagram := eq .File.BaseFileName "xr-continuous-authentication" -}}
         {{- $project_image := resources.Get .Params.project_image -}}
         <article class="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white transition duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg">
           <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100" aria-label="{{ .Title }}">
             {{ with $project_image }}
               {{- $image := .Fill "960x600 Center webp q84" -}}
-              <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $project.Params.image_alt | default $project.Title }}" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+              {{- if $diagram }}{{ $image = .Fit "960x600 webp q84" }}{{ end -}}
+              <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $project.Params.image_alt | default $project.Title }}" loading="lazy" class="h-full w-full {{ if $diagram }}object-contain bg-white p-3{{ else }}object-cover{{ end }} transition duration-300 group-hover:scale-[1.03] motion-reduce:transform-none">
             {{ else }}
               <div class="flex h-full items-center justify-center bg-slate-100 text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">XR</div>
             {{ end }}
           </a>
           <div class="flex flex-1 flex-col p-6 sm:p-7">
             {{ with .Params.umbrella_label }}<p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ . }}</p>{{ end }}
-            <h3 class="mt-2 text-xl font-bold leading-snug text-slate-950 sm:text-2xl"><a href="{{ .RelPermalink }}" class="group-hover:underline">{{ .Title }}</a></h3>
+            <h3 class="mt-2 text-xl font-bold leading-snug text-slate-950 sm:text-2xl"><a href="{{ .RelPermalink }}" class="group-hover:underline">{{ $card_title }}</a></h3>
             <p class="mt-3 flex-1 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
-            <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+            <div class="mt-6 grid grid-rows-2 gap-2">
               <a href="{{ .RelPermalink }}" class="inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details <span class="ml-2" aria-hidden="true">→</span></a>
               {{ with .Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project website <span class="ml-2" aria-hidden="true">↗</span></a>{{ end }}
             </div>
@@ -58,24 +61,23 @@
     </div>
   </section>
 
-  <section class="grid gap-8 border-b border-slate-200 py-16 sm:grid-cols-[1fr_auto] sm:items-center sm:py-20" aria-labelledby="home-team-title">
+  <section class="grid gap-8 border-b border-slate-200 py-10 sm:grid-cols-[1fr_auto] sm:items-center sm:py-14" aria-labelledby="home-team-title">
     <div>
       <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">People</p>
       <h2 id="home-team-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Meet the team</h2>
       <p class="mt-3 max-w-2xl leading-relaxed text-slate-600">Our lab brings together researchers who design and evaluate immersive interfaces for people and real-world settings.</p>
-      <a href="{{ "people/" | relURL }}" class="mt-5 inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Meet the team <span class="ml-2" aria-hidden="true">→</span></a>
+      <a href="{{ "people/" | relURL }}" class="mt-5 inline-flex font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">View all members <span class="ml-2" aria-hidden="true">→</span></a>
     </div>
     <a href="{{ $author_data.website | default ("people/" | relURL) }}" class="flex items-center gap-4 sm:min-w-72">
       {{ with $avatar }}{{- $image := .Fill "180x180 Smart q86" -}}<img src="{{ $image.RelPermalink }}" width="90" height="90" alt="{{ $profile.title }}" loading="lazy" class="h-[4.5rem] w-[4.5rem] rounded-full object-cover">{{ end }}
-      <span><span class="block font-semibold text-slate-950">{{ $profile.title }}</span><span class="mt-1 block text-sm text-slate-600">{{ $profile.role }}</span><span class="mt-1 block text-sm text-slate-500">Lab Director</span></span>
+      <span><span class="block font-semibold text-slate-950">{{ $profile.title }}</span><span class="mt-1 block text-sm text-slate-600">{{ $profile.role }}</span></span>
     </a>
   </section>
 
-  <section class="border-b border-slate-200 py-16 sm:py-20" aria-labelledby="home-publications-title">
+  <section class="border-b border-slate-200 py-10 sm:py-14" aria-labelledby="home-publications-title">
     <div class="flex flex-wrap items-end justify-between gap-4">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Research Highlight</p>
-        <h2 id="home-publications-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Latest Research</h2>
+        <h2 id="home-publications-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Recent Publications</h2>
       </div>
       <a href="{{ "publications/" | relURL }}" class="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">All publications <span aria-hidden="true">→</span></a>
     </div>
