@@ -33,7 +33,7 @@
 
       {{ end }}
 
-      <div class="prose prose-slate mt-7 max-w-none lg:prose-lg dark:prose-invert [&_h2]:mb-3 [&_h2]:mt-10 [&_h2]:text-2xl [&_p]:leading-relaxed" data-pagefind-body>
+      <div class="{{ if eq .Section "projects" }}project-content {{ end }}prose prose-slate mt-7 max-w-none lg:prose-lg dark:prose-invert [&_h2]:mb-3 [&_h2]:mt-10 [&_h2]:text-2xl [&_p]:leading-relaxed" data-pagefind-body>
         {{ with .Section }}
           <span data-pagefind-filter="type" style="display:none;">{{ . }}</span>
         {{ end }}
