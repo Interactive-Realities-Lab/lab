@@ -11,18 +11,7 @@
         {{/* Auto-detect logo from assets/media/logo.{svg,png} */}}
         {{ if $show_logo }}
         {{ with $logo.resource }}
-          {{ if $logo.is_svg }}
-            {{- .Content | replaceRE `<svg` `<svg aria-hidden="true" focusable="false"` | safeHTML -}}
-          {{ else }}
-            <img
-              fetchpriority="high"
-              decoding="async"
-              class=""
-              width="{{ .Width }}"
-              height="{{ .Height }}"
-              src="{{ .RelPermalink }}"
-              alt="{{ $branding.name }}" />
-          {{ end }}
+          <img class="brand-symbol" src="{{ .RelPermalink }}" width="36" height="36" alt="" fetchpriority="high" decoding="async" />
         {{ end }}
         {{ end }}
         {{/* Display brand name */}}
@@ -120,6 +109,7 @@
           target="_blank" rel="noopener"
           {{ end }}
           href="{{$url}}"
+          {{ if $active }}aria-current="page"{{ end }}
         >{{ .Name }}</a
         >
       </li>
