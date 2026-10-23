@@ -392,7 +392,7 @@
   margin: 0;
   color: var(--irlab-ink);
   font-size: 1.22rem;
-  font-weight: 720;
+  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.3;
   -webkit-box-orient: vertical;
@@ -415,7 +415,7 @@
   margin: 0.3rem 0 0;
   color: #4b566c;
   font-size: 0.94rem;
-  font-weight: 560;
+  font-weight: 400;
   line-height: 1.5;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -521,7 +521,7 @@
   margin: 0;
   color: var(--irlab-ink);
   font-size: clamp(2rem, 3.4vw, 3rem);
-  font-weight: 750;
+  font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1.16;
   text-wrap: wrap;
@@ -924,7 +924,7 @@
   --irlab-muted: #5d6578;
   --irlab-surface: #f5f6fb;
   --irlab-rule: #e1e4ef;
-  --irlab-ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --irlab-ui-font: var(--hb-font-body);
 }
 
 #site-header.header {
@@ -947,7 +947,7 @@
   position: relative;
   color: var(--irlab-muted);
   font-size: 0.93rem;
-  font-weight: 550;
+  font-weight: 500;
   letter-spacing: 0;
 }
 
@@ -1074,6 +1074,58 @@
 @media (prefers-reduced-motion: reduce) {
   #section-home-overview .home-project-card,
   #section-sage-team .people-card {
+    transition: none;
+  }
+}
+
+/* Shared type roles: local Lora headings and system sans-serif reading/UI text. */
+body {
+  font-family: var(--hb-font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+button, input, select, textarea, .brand-action {
+  font-family: var(--hb-font-body);
+}
+.page-body :is(h1, h2, h3, h4),
+#related-projects-heading {
+  font-family: var(--hb-font-heading);
+  font-weight: 600;
+}
+.page-body h1:not(#home-title),
+.publication-detail .page-body article > main > h1 {
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+#section-home-overview h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.3;
+}
+#section-home-overview article h3,
+#project-grid article h3,
+.publication-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+#section-sage-team > .mx-auto > header p {
+  color: var(--irlab-muted);
+  line-height: 1.7;
+}
+.page-body .prose :is(figcaption, .figure-caption) {
+  font-family: var(--hb-font-body);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--irlab-muted);
+}
+#site-header .nav-link, .brand-action, .publication-actions :is(a, button) {
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  #site-header .nav-link, .brand-action, .publication-actions :is(a, button) {
     transition: none;
   }
 }
