@@ -813,38 +813,6 @@
   box-shadow: none;
 }
 
-#section-sage-team .people-group:first-child .people-grid {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-#section-sage-team .people-group:first-child .people-card {
-  flex-direction: row;
-  align-items: center;
-  gap: 1.25rem;
-  border: 0;
-}
-
-#section-sage-team .people-group:first-child .people-card:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-#section-sage-team .people-group:first-child .people-avatar {
-  flex: 0 0 7rem;
-  width: 7rem;
-  aspect-ratio: 1;
-}
-
-#section-sage-team .people-group:first-child .people-card-content {
-  min-height: 0;
-  padding: 0;
-}
-
-#section-sage-team .people-group:first-child .people-role {
-  display: block;
-  min-height: 0;
-}
-
 .publication-row {
   display: flex;
   align-items: flex-start;
@@ -1127,5 +1095,45 @@ button, input, select, textarea, .brand-action {
 @media (prefers-reduced-motion: reduce) {
   #site-header .nav-link, .brand-action, .publication-actions :is(a, button) {
     transition: none;
+  }
+}
+
+/* Shared rhythm for project text, figures, captions, and embedded video. */
+.project-content {
+  --project-media-gap: 2rem;
+}
+.project-content > p {
+  margin-block: 1.25rem;
+}
+.project-content > p:first-of-type {
+  margin-top: 0;
+}
+.project-content > .project-figure,
+.project-content > div:has(> iframe) {
+  margin-block: var(--project-media-gap);
+  margin-inline: auto;
+}
+.project-content > div:has(> iframe) {
+  margin-bottom: 0.75rem;
+}
+.project-content > div:has(> iframe) + p {
+  margin-top: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--irlab-muted);
+}
+.project-content .project-figure figcaption {
+  margin-top: 0.75rem;
+  text-align: left;
+}
+.project-content .project-figure figcaption > p {
+  margin: 0;
+}
+.project-content > :last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 639px) {
+  .project-content {
+    --project-media-gap: 1.5rem;
   }
 }
