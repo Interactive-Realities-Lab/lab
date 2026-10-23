@@ -2,7 +2,7 @@
 {{- if not $image -}}
   {{- errorf "Missing project image %q on %s" (.Get "src") .Page.RelPermalink -}}
 {{- else -}}
-<figure class="project-figure" style="margin:2rem auto;max-width:{{ $image.Width }}px">
+<figure class="project-figure" style="max-width:{{ $image.Width }}px">
   <picture{{ if eq (.Get "hover") "true" }} class="project-image-hover"{{ end }}>
     {{- with .Get "still" -}}
       {{- with resources.Get . -}}
@@ -13,6 +13,6 @@
     {{- end -}}
     <img src="{{ $image.RelPermalink }}" alt="{{ .Get "alt" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;margin:0">
   </picture>
-  <figcaption style="margin-top:0.75rem;font-size:0.875rem;line-height:1.6;text-align:left">{{ .Inner | markdownify }}</figcaption>
+  <figcaption>{{ .Inner | markdownify }}</figcaption>
 </figure>
 {{- end -}}
