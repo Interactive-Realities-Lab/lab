@@ -27,15 +27,15 @@
 #site-header .navbar-brand {
   flex-direction: row;
   gap: 0.65rem;
-  transform: translateY(3px);
-  color: #18213b;
+  transform: none;
+  color: var(--irlab-ink);
   font-size: 1.18rem;
-  font-weight: 780;
-  letter-spacing: -0.045em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
-#site-header .navbar-brand svg {
-  width: 31px;
+#site-header .navbar-brand :is(svg, .brand-symbol) {
+  width: 36px;
   height: 36px;
   flex: none;
 }
@@ -49,7 +49,7 @@
 
 #site-header .nav-link:hover,
 #site-header .nav-link:focus-visible {
-  color: #35469a;
+  color: var(--irlab-accent);
 }
 
 .skip-to-content {
@@ -59,7 +59,7 @@
   z-index: 200;
   padding: 0.75rem 1rem;
   background: #fff;
-  color: #0f172a;
+  color: var(--irlab-ink);
   font-weight: 700;
   transform: translateY(-200%);
 }
@@ -69,7 +69,7 @@
 }
 
 :is(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid #1d4ed8;
+  outline: 3px solid var(--irlab-accent);
   outline-offset: 3px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 #nav-toggle:focus-visible + label {
-  outline: 3px solid #1d4ed8;
+  outline: 3px solid var(--irlab-accent);
   outline-offset: 4px;
 }
 
@@ -187,28 +187,28 @@
   transform: translateY(-1px);
   border-color: #94a3b8;
   background: #f8fafc;
-  color: #0f172a;
+  color: var(--irlab-ink);
   box-shadow: 0 4px 10px rgb(15 23 42 / 10%);
 }
 
 .hb-attachment-link-large:is(a):first-child {
-  border-color: #1d4ed8;
-  background: #1d4ed8;
+  border-color: var(--irlab-accent);
+  background: var(--irlab-accent);
   color: #fff;
   box-shadow: 0 4px 10px rgb(29 78 216 / 28%);
 }
 
 .hb-attachment-link-large:is(a):first-child:hover,
 .hb-attachment-link-large:is(a):first-child:focus-visible {
-  border-color: #1e40af;
-  background: #1e40af;
+  border-color: var(--irlab-accent-hover);
+  background: var(--irlab-accent-hover);
   color: #fff;
   box-shadow: 0 5px 12px rgb(30 58 138 / 28%);
 }
 
 
 .hb-attachment-link-large:focus-visible {
-  outline: 3px solid #1d4ed8;
+  outline: 3px solid var(--irlab-accent);
   outline-offset: 2px;
 }
 
@@ -244,7 +244,7 @@
 
 /* Use the same page-title scale across content and landing pages. */
 .page-body h1:not(#home-title) {
-  color: #0f172a;
+  color: var(--irlab-ink);
   font-size: 1.875rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -278,7 +278,7 @@
 }
 
 #section-markdown > .flex.flex-col.items-center.max-w-prose > .mb-6 {
-  color: #0f172a;
+  color: var(--irlab-ink);
   font-size: 1.875rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -310,7 +310,7 @@
 
 #section-sage-team .people-group-heading h2 {
   margin: 0;
-  color: #18213b;
+  color: var(--irlab-ink);
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -348,9 +348,8 @@
 }
 
 #section-sage-team .people-card:hover {
-  transform: translateY(-3px);
-  border-color: #c9d0dc;
-  box-shadow: 0 12px 30px rgb(24 33 59 / 9%);
+  border-color: #aeb6d4;
+  box-shadow: none;
 }
 
 #section-sage-team .people-avatar {
@@ -391,7 +390,7 @@
   min-height: 1.3em;
   overflow: hidden;
   margin: 0;
-  color: #18213b;
+  color: var(--irlab-ink);
   font-size: 1.22rem;
   font-weight: 720;
   letter-spacing: -0.025em;
@@ -406,7 +405,7 @@
 }
 
 #section-sage-team .people-card h3 a:hover {
-  color: #a33d28;
+  color: var(--irlab-accent);
 }
 
 #section-sage-team .people-role {
@@ -458,7 +457,7 @@
 }
 
 #section-sage-team .people-social-links a:hover {
-  color: #a33d28;
+  color: var(--irlab-accent);
 }
 
 @media (max-width: 600px) {
@@ -520,7 +519,7 @@
 .publication-detail .page-body article > main > h1 {
   max-width: none;
   margin: 0;
-  color: #18213b;
+  color: var(--irlab-ink);
   font-size: clamp(2rem, 3.4vw, 3rem);
   font-weight: 750;
   letter-spacing: -0.035em;
@@ -568,7 +567,7 @@
   transform: none;
   border-color: #8994a5;
   background: #f7f8fa;
-  color: #18213b;
+  color: var(--irlab-ink);
   box-shadow: none;
 }
 
@@ -669,7 +668,7 @@
 
 .publication-detail article > main > .container.prose .flex.justify-center > a[href*="/tags/"]:hover {
   background: #e8ebef;
-  color: #18213b;
+  color: var(--irlab-ink);
 }
 
 .publication-detail article > main > .container.prose section.flex > a {
@@ -679,7 +678,7 @@
 
 .publication-detail article > main > .container.prose section.flex > a:hover {
   background: #e8ebef;
-  color: #18213b;
+  color: var(--irlab-ink);
 }
 
 .publication-detail article > main > .container.prose .no-prose a.text-right {
@@ -865,7 +864,7 @@
 
 .publication-title {
   margin: 0;
-  color: #0f172a;
+  color: var(--irlab-ink);
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.5;
@@ -914,5 +913,167 @@
   .publication-row {
     flex-direction: column;
     gap: 0.75rem;
+  }
+}
+
+/* Brand colors complement the original translucent IRLab mark. */
+:root {
+  --irlab-ink: #252b50;
+  --irlab-accent: #535fa3;
+  --irlab-accent-hover: #3d477f;
+  --irlab-muted: #5d6578;
+  --irlab-surface: #f5f6fb;
+  --irlab-rule: #e1e4ef;
+  --irlab-ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#site-header.header {
+  background: #fff;
+  box-shadow: 0 1px 0 var(--irlab-rule);
+}
+
+#site-header .navbar-brand,
+#site-header .nav-link,
+.brand-eyebrow,
+.hb-attachment-link,
+.publication-actions,
+#project-grid article > div > p:first-child,
+#section-home-overview article > div > p:first-child,
+#section-sage-team .people-group-heading span {
+  font-family: var(--irlab-ui-font);
+}
+
+#site-header .nav-link {
+  position: relative;
+  color: var(--irlab-muted);
+  font-size: 0.93rem;
+  font-weight: 550;
+  letter-spacing: 0;
+}
+
+#site-header .nav-link:is(.active, :hover, :focus-visible) {
+  color: var(--irlab-accent);
+}
+
+#site-header .nav-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.55em;
+}
+
+.page-body :is(h1, h2, h3, h4),
+.page-body :is(h1, h2, h3, h4) > a,
+.publication-detail .page-body article > main > h1 {
+  color: var(--irlab-ink);
+}
+
+#section-home-overview .home-intro {
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  border: 1px solid var(--irlab-rule);
+  border-radius: 6px;
+  background: var(--irlab-surface);
+}
+
+#section-home-overview .home-brand-symbol {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(4rem, 9vw, 7rem);
+  height: auto;
+  background: #fff;
+}
+
+#section-home-overview #home-title {
+  font-weight: 600;
+  line-height: 1.17;
+}
+
+.brand-eyebrow {
+  color: var(--irlab-accent);
+  line-height: 1.6;
+}
+
+#section-home-overview .home-intro > p {
+  max-width: 57rem;
+  color: var(--irlab-muted);
+}
+
+#section-home-overview .brand-action,
+#project-grid article > div > div a {
+  color: var(--irlab-accent);
+  font-family: var(--irlab-ui-font);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration-color: #bdc4e0;
+  text-decoration-thickness: 1px;
+}
+
+#section-home-overview .brand-action:hover,
+#project-grid article > div > div a:hover {
+  color: var(--irlab-accent-hover);
+  text-decoration-color: currentColor;
+}
+
+#section-home-overview .home-project-card {
+  border-color: var(--irlab-rule);
+  border-radius: 4px;
+  transition: border-color 180ms ease;
+}
+
+#section-home-overview .home-project-card:hover {
+  border-color: #aeb6d4;
+}
+
+#section-home-overview .home-location {
+  background: var(--irlab-surface);
+  border-radius: 4px;
+}
+
+#section-home-overview .home-location a {
+  border-color: #b5bddc;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.publication-actions a,
+.publication-actions button,
+.publication-detail .hb-attachment-link.hb-attachment-link-large,
+.page-body .prose a:not(:has(img)) {
+  color: var(--irlab-accent);
+}
+
+@media (max-width: 639px) {
+  #section-home-overview .home-intro > div {
+    display: grid;
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.75rem 1rem;
+  }
+  #section-home-overview .home-intro > div > .min-w-0 {
+    display: contents;
+  }
+  #section-home-overview .home-intro .brand-eyebrow {
+    grid-column: 2;
+  }
+  #section-home-overview .home-intro #home-title {
+    grid-column: 1 / -1;
+    margin-top: 0.25rem;
+  }
+  #section-home-overview .home-brand-symbol {
+    width: 3.25rem;
+    margin-top: 0.2rem;
+  }
+  #section-home-overview #home-title {
+    font-size: 1.8rem;
+  }
+  #section-home-overview .home-intro > p {
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #section-home-overview .home-project-card,
+  #section-sage-team .people-card {
+    transition: none;
   }
 }
