@@ -37,12 +37,6 @@
                 <div class="people-card-content">
                   <h3><a href="{{ $profile_url }}">{{ $profile.title }}</a></h3>
                   {{ with $profile.role }}<p class="people-role">{{ . }}</p>{{ end }}
-                  {{ with $profile.affiliations }}
-                    {{ $affiliation := index . 0 }}
-                    <p class="people-affiliation">
-                      {{ if $affiliation.url }}<a href="{{ $affiliation.url }}">{{ $affiliation.name }}</a>{{ else }}{{ $affiliation.name }}{{ end }}
-                    </p>
-                  {{ end }}
                   {{ with $profile.links }}
                     <div class="people-social-links">
                       {{ partial "social_links" (dict "Params" (dict "profiles" .)) }}

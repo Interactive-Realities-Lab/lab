@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{- $research := site.GetPage "/research" -}}
 {{- $projects := site.GetPage "/projects" -}}
+{{- $card_titles := dict "firstmodular" "FirstModulAR" "xr-continuous-authentication" "Continuous Authentication in XR" "survivrs" "SURVIVRS" -}}
 <div class="mx-auto w-full max-w-6xl px-6 pb-12 pt-6 md:px-12"{{ if eq .Kind "page" }} data-pagefind-body{{ end }}>
   <header class="max-w-4xl">
     <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl" data-pagefind-meta="title">{{ $research.Title }}</h1>
@@ -18,17 +19,20 @@
 
   <section class="mt-10" aria-labelledby="current-projects-title">
     <h2 id="current-projects-title" class="text-2xl font-bold tracking-tight text-slate-950">Current projects</h2>
-    <div class="mt-8 grid auto-rows-fr gap-7 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
+    <div class="mt-8 grid gap-7 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
       {{ range $projects.RegularPages.ByWeight }}
         {{- $umbrella := .Params.umbrella | default "public-safety-xr" -}}
         {{- $status := .Params.status | default "active" -}}
         {{- $marker := "XR" -}}
         {{- $image := resources.Get .Params.project_image -}}
+        {{- $card_title := index $card_titles .File.BaseFileName | default .Title -}}
+        {{- $diagram := eq .File.BaseFileName "xr-continuous-authentication" -}}
         <article class="project-card flex h-full flex-col overflow-hidden border border-slate-200 bg-white [&[hidden]]:hidden" data-umbrella="{{ $umbrella }}" data-status="{{ $status }}">
-          <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100{{ if .Params.project_image_hover }} project-image-hover{{ end }}" aria-label="{{ .Title }}">
+          <a href="{{ .RelPermalink }}" class="block aspect-[16/10] overflow-hidden bg-slate-100 project-image-hover" aria-label="{{ .Title }}">
             {{ if $image }}
               {{- $thumb := $image.Fill "960x600 Center webp q82" -}}
-              <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-full w-full object-cover">
+              {{- if $diagram }}{{ $thumb = $image.Fit "960x600 webp q84" }}{{ end -}}
+              <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Params.image_alt }}" loading="lazy" class="h-full w-full {{ if $diagram }}object-contain bg-white p-3{{ else }}object-cover{{ end }}">
             {{ else }}
               <div class="flex h-full w-full items-center justify-center text-4xl font-semibold tracking-[0.18em] text-slate-400" aria-hidden="true">{{ $marker }}</div>
             {{ end }}
@@ -36,11 +40,11 @@
           <div class="flex flex-1 flex-col p-6">
             <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{{ .Params.umbrella_label }}</p>
             {{ if eq $status "revive" }}<p class="mt-2 inline-block border border-slate-300 px-2 py-1 text-xs font-medium text-slate-700">Available to revive</p>{{ end }}
-            <h3 class="mt-2 text-xl font-semibold leading-snug text-slate-950"><a href="{{ .RelPermalink }}" class="hover:underline">{{ .Title }}</a></h3>
-            <p class="mt-3 line-clamp-2 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
-            <div class="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5">
-              <a href="{{ .RelPermalink }}" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details</a>
-              {{ with .Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project website</a>{{ end }}
+            <h3 class="mt-2 text-xl font-semibold leading-snug text-slate-950"><a href="{{ .RelPermalink }}" class="hover:underline">{{ $card_title }}</a></h3>
+            <p class="mt-3 leading-relaxed text-slate-600">{{ .Params.summary }}</p>
+            <div class="mt-auto grid grid-rows-2 gap-2 pt-5">
+              <a href="{{ .RelPermalink }}" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project details <span aria-hidden="true">→</span></a>
+              {{ with .Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">Project website <span aria-hidden="true">↗</span></a>{{ end }}
             </div>
           </div>
         </article>
