@@ -21,6 +21,10 @@ image_alt: Doctor using the SURVIVRS virtual reality application.
 
 SURVIVRS explores how immersive technology can support communication between remote specialists and local medical teams. The research is motivated by uneven access to surgical expertise, particularly in underserved and geographically isolated settings. A published 2023 prototype introduced a virtual reality environment for viewing the operating room and communicating visual guidance, with potential uses in remote collaboration and medical education. Building on this earlier work, our ongoing research continues to investigate immersive interfaces for remote guidance and shared understanding. The broader aim is to understand how these environments can help people exchange context and expertise across distance, while keeping human collaboration central to the experience.
 
+{{< youtube id="R8NKDxfVdAw" title="SURVIVRS: Immersive Remote Collaboration for Healthcare" loading="lazy" >}}
+
+*Contains surgical footage. No audio.* · [Watch on YouTube](https://youtu.be/R8NKDxfVdAw)
+
 {{< project_figure src="media/projects/survivrs/figure-3a.png" alt="Figure 3(a): Idealized image of a doctor using the VR application on the remote surgeon side." >}}
 **Figure 3(a).** Idealized image of a doctor using the VR application on the remote surgeon side.
 {{< /project_figure >}}
