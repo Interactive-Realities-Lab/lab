@@ -27,28 +27,30 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
-
-      - name: Import the public ORCID record
+      - name: Import and validate public ORCID records
         env:
-          ORCID_ID: "0000-0003-2081-7061"
+          # Add one ORCID ID per line to sync more researchers.
+          ORCID_IDS: |
+            0000-0003-2081-7061
         run: |
           python -m pip install "hugobloxorcid==0.3.0" "pybtex==0.26.1" "PyYAML==6.0.3"
-          hugoblox-orcid-import "$ORCID_ID" \
-            --output "$RUNNER_TEMP/orcid-publications" \
-            --no-download-pdf \
-            --no-import-grants
-
-      - name: Validate imported metadata and skip duplicates
-        env:
-          ORCID_ID: "0000-0003-2081-7061"
-        run: |
-          python scripts/normalize_orcid_publications.py "$RUNNER_TEMP/orcid-publications"
-          python scripts/validate_orcid_publications.py \
-            --imported "$RUNNER_TEMP/orcid-publications" \
-            --existing content/publications \
-            --output "$RUNNER_TEMP/validated-publications" \
-            --orcid-id "$ORCID_ID"
-          rsync -a --ignore-existing "$RUNNER_TEMP/validated-publications/" content/publications/
+          while IFS= read -r orcid_id; do
+            [ -n "$orcid_id" ] || continue
+            echo "Syncing ORCID $orcid_id"
+            imported="$RUNNER_TEMP/orcid-publications/$orcid_id"
+            validated="$RUNNER_TEMP/validated-publications/$orcid_id"
+            hugoblox-orcid-import "$orcid_id" \
+              --output "$imported" \
+              --no-download-pdf \
+              --no-import-grants
+            python scripts/normalize_orcid_publications.py "$imported"
+            python scripts/validate_orcid_publications.py \
+              --imported "$imported" \
+              --existing content/publications \
+              --output "$validated" \
+              --orcid-id "$orcid_id"
+            rsync -a --ignore-existing "$validated/" content/publications/
+          done <<< "$ORCID_IDS"
 
       - name: Open a reviewable update
         uses: peter-evans/create-pull-request@v8
