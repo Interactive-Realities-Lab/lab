@@ -176,6 +176,18 @@
   line-height: inherit;
 }
 
+/* Align attachment icons with their labels instead of the text baseline. */
+.publication-actions .hb-attachment-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.publication-actions .hb-attachment-link svg {
+  display: block;
+  flex: none;
+}
+
 @media (min-width: 1024px) {
   .pub-list-item .hb-attachment-link.hb-attachment-link-small {
     font-size: 1rem;
