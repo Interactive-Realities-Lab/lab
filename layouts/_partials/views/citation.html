@@ -6,17 +6,6 @@
 {{ $top_award := "" }}
 {{ with $item.Params.awards }}{{ $top_award = index . 0 }}{{ end }}
 
-{{/* Publication identifiers imported from ORCID are stored under hugoblox.ids. */}}
-{{ $doi := $item.Params.doi | default "" }}
-{{ with $item.Params.hugoblox }}
-  {{ with .ids }}
-    {{ with .doi }}{{ $doi = . }}{{ end }}
-  {{ end }}
-{{ end }}
-{{ $doi = strings.TrimPrefix "https://doi.org/" $doi }}
-{{ $doi = strings.TrimPrefix "http://doi.org/" $doi }}
-{{ $doi = strings.TrimPrefix "http://dx.doi.org/" $doi }}
-
 <div class="pub-list-item view-citation publication-row">
   <div class="publication-copy">
     <h2 class="publication-title"><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h2>
@@ -29,15 +18,4 @@
       <div class="publication-actions">{{ partial "page_links" (dict "page" $item "is_list" 1) }}</div>
     {{ end }}
   </div>
-
-  {{ with $doi }}
-  <div class="flex shrink-0 items-start gap-3 sm:w-32 sm:justify-end lg:w-36" role="group" aria-label="Publication metrics">
-    <span
-      class="__dimensions_badge_embed__"
-      data-doi="{{ . }}"
-      data-style="small_circle"
-      data-legend="hover-left"
-    ></span>
-  </div>
-  {{ end }}
 </div>
