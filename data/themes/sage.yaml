@@ -1,12 +1,12 @@
-# SAGE Lab theme: restrained black-and-white editorial palette.
+# IRLab theme: restrained black-and-white editorial palette.
 hugoblox:
   meta:
     format: "hugoblox-theme@1"
-    name: "SAGE"
-    vendor: "SAGE Lab"
+    name: "IRLab"
+    vendor: "Interactive Realities Laboratory"
     version: "1.0.0"
     license: "MIT"
-    description: "A classic monochrome theme for the SAGE Lab."
+    description: "A classic monochrome theme for IRLab."
 
   type: "dual"
 

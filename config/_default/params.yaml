@@ -226,7 +226,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   repository:
     enable: false
-    url: "https://github.com/rempsyc/lab"
+    url: "https://github.com/Interactive-Realities-Lab/lab"
     branch: main
     content_dir: content
 
