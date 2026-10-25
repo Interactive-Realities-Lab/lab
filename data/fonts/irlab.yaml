@@ -5,7 +5,7 @@ hugoblox:
     style: "serif"
   families:
     heading: "Lora"
-    body: "system-sans"
+    body: "Source Serif 4"
     nav: "system-sans"
     code: "system-mono"
   weights:
