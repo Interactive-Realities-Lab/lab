@@ -1,0 +1,8 @@
+{{- with resources.Get (.Get "src") -}}
+  {{- $image := .Fit "2000x2000 webp q90" -}}
+  <figure class="news-photo {{ $.Get "class" }}">
+    <img src="{{ $image.RelPermalink }}" alt="{{ $.Get "alt" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" decoding="async">
+  </figure>
+{{- else -}}
+  {{- errorf "Missing news image %q" (.Get "src") -}}
+{{- end -}}

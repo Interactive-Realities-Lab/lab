@@ -1,0 +1,5 @@
+<div class="news-list not-prose">
+  {{ range .Page.RegularPages.ByDate.Reverse }}
+    {{ partial "news-card.html" . }}
+  {{ end }}
+</div>

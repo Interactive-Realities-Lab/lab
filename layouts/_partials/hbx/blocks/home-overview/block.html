@@ -74,6 +74,22 @@
     </a>
   </section>
 
+  {{ with site.GetPage "news" }}
+  {{ if .RegularPages }}
+  <section class="border-b border-slate-200 py-10 sm:py-14" aria-labelledby="home-news-title">
+    <div class="mb-7 flex flex-wrap items-end justify-between gap-4">
+      <h2 id="home-news-title" class="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">News</h2>
+      <a href="{{ .RelPermalink }}" class="brand-action font-semibold text-slate-800 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900">All news <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="news-list">
+      {{ range first 3 .RegularPages.ByDate.Reverse }}
+        {{ partial "news-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
   <section class="border-b border-slate-200 py-10 sm:py-14" aria-labelledby="home-publications-title">
     <div class="flex flex-wrap items-end justify-between gap-4">
       <div>
