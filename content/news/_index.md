@@ -8,4 +8,4 @@ reading_time: false
 share: false
 ---
 
-Lab announcements, project updates, awards, talks, and other news will be posted here.
+{{< news_list >}}
