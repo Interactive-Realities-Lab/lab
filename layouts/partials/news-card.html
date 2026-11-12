@@ -2,11 +2,11 @@
   {{ with resources.Get .Params.news_image }}
     {{ $image := .Fit "1200x1200 webp q88" }}
     <a class="news-card-photo" href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
-      <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $.Params.image_alt }}" loading="lazy" decoding="async">
+      <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $.Params.image_alt }}"{{ if $.Params.news_image_uncropped }} style="aspect-ratio:auto"{{ end }} loading="lazy" decoding="async">
     </a>
   {{ end }}
   <div>
-    <time class="news-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    <time class="news-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.date_display | default (.Date.Format "January 2, 2006") }}</time>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .Params.summary }}</p>
     <a class="brand-action news-read-more" href="{{ .RelPermalink }}">Read more <span aria-hidden="true">→</span></a>
