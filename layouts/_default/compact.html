@@ -6,7 +6,7 @@
         {{ .Title }}
       </h1>
       {{ if and (eq .Section "news") .IsPage }}
-        <time class="news-date news-article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        <time class="news-date news-article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.date_display | default (.Date.Format "January 2, 2006") }}</time>
       {{ end }}
 
       {{ with .Params.external_url }}
