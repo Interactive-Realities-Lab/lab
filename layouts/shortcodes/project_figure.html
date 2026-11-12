@@ -2,7 +2,7 @@
 {{- if not $image -}}
   {{- errorf "Missing project image %q on %s" (.Get "src") .Page.RelPermalink -}}
 {{- else -}}
-<figure class="project-figure" style="max-width:{{ $image.Width }}px">
+<figure class="project-figure" style="max-width:{{ .Get "max_width" | default $image.Width }}px">
   <picture{{ if eq (.Get "hover") "true" }} class="project-image-hover"{{ end }}>
     {{- with .Get "still" -}}
       {{- with resources.Get . -}}

@@ -8,6 +8,8 @@ featured: false
 umbrella: xr-interaction
 umbrella_label: XR Interaction
 summary: Augmented reality, sensing, and feedback for interaction with physical objects.
+project_image: media/projects/xr-physical-interaction/interaction-overview.jpg
+show_project_hero: false
 related_people:
 - jie-ding
 - regis-kopper
@@ -15,6 +17,12 @@ related_people:
 
 **Members:** [Jie Ding]({{< relref "/authors/jie-ding" >}}) · [Regis Kopper]({{< relref "/authors/regis-kopper" >}})
 
-Physical Object Manipulation explores how augmented reality can support people as they interact with real objects. The research brings together sensing, 3D-printed prototypes, and visual feedback to study how interfaces connect physical actions with information about an ongoing task. It focuses on usability, precision, and the relationship between what people do and what an interface communicates.
+We explore augmented reality interfaces for interacting with physical objects. Combining sensing, 3D printing, and mechanical design, our research investigates how visual feedback can help people interpret physical actions and adjust their interaction. We are interested in lightweight, adaptable prototypes that connect physical activity with digital information.
 
-This research contributes to [FirstModulAR]({{< relref "/projects/firstmodular" >}}), a platform for exploring AR interfaces for first responders.
+{{< project_figure src="media/projects/xr-physical-interaction/interaction-overview.jpg" alt="A headset wearer interacting with physical prototypes." max_width="640" >}}
+**Figure 1.** Exploring interaction with physical prototypes using a head-mounted display.
+{{< /project_figure >}}
+
+{{< project_figure src="media/projects/xr-physical-interaction/interaction-detail.jpg" alt="An overhead view of hands interacting with physical prototypes." max_width="960" >}}
+**Figure 2.** Hands-on interaction with 3D-printed prototypes.
+{{< /project_figure >}}
