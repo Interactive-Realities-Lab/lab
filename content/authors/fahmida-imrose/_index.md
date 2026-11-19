@@ -18,7 +18,7 @@ Fahmida Imrose is a PhD student in Computer Science at Iowa State University. He
 
 ## Current Work
 
-[Immersive Molecular Visualization]({{< relref "/projects/molecular-visualization" >}})
+[DockPrism: Immersive Molecular Docking Analysis]({{< relref "/projects/molecular-visualization" >}})
 
 ## Links
 
